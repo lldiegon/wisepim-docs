@@ -2,7 +2,7 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "WISEPIM Documentation",
   "logo": {
-    "dark": "/logo/dark.svg",
+    "dark": "/logo/Swiftsync-ai-logo-transparant.png",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
@@ -33,14 +33,14 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Homepage",
+      "icon": "house-chimney",
+      "url": "https://wisepim.swiftsync.ai"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Custom Development",
+      "icon": "code",
+      "url": "https://swiftsync.ai"
     },
     {
       "name": "Blog",
@@ -84,8 +84,7 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "youtube": "https://www.youtube.com/channel/UC5sQ48mV3sYEBme01xvVIXw",
+    "linkedin": "https://www.linkedin.com/company/swiftsyncai/"
   }
 }

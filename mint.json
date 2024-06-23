@@ -3,13 +3,13 @@
   "name": "WISEPIM Documentation",
   "logo": {
     "dark": "/logo/Swiftsync-ai-logo-transparant.png",
-    "light": "/logo/light.svg"
+    "light": "/logo/Swiftsync-ai-logo-transparant.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "colors": {
     "primary": "#E71447",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "light": "#E71447",
+    "dark": "#E71447",
     "anchors": {
       "from": "#0D9373",
       "to": "#07C983"
@@ -23,7 +23,7 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://wisepim.swiftsync.ai"
+    "url": "https://wisepim.swiftsync.ai/products"
   },
   "tabs": [
     {

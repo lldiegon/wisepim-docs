@@ -1,33 +1,50 @@
 ---
 title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+description: 'Instructions for adding a supported platform.'
 ---
 
 <Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
+  The platforms are used as a source or destination for products, they are used for imports and exports.
 </Note>
 
-## Welcome
+## Supported platforms
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+We currently support the following platforms, click on the icon to see setup instructions:
 
-<Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
->
-  View the OpenAPI specification file
-</Card>
 
-## Authentication
+<CardGroup cols={2}>
+  <Card title="Magento 2" icon="magento" href="/integrations">
+    Effortlessly import products with potential, make them better and export the improved products back.
+  </Card>
+  <Card title="Webshopimporter" icon="box" href="/integrations/webshopimporter">
+    Import products from suppliers on Webshopimporter and customize it to fit your brand.
+  </Card>
+  <Card title="Shopify" icon="shopify" href="/integrations/shopify">
+    Easily import products with potential, make them better and export the improved products back.
+  </Card>
+  <Card title="Lightspeed" icon="fire-flame-curved" href="/integrations/lightspeed">
+    Quickly import products with potential, make them better and export the improved products back.
+  </Card>
+  <Card title="Woocommerce" icon="wordpress" href="/integrations/woocommerce">
+    Simply import products with potential, make them better and export the improved products back.
+  </Card>
+  <Card title="CVV Shop" icon="cart-shopping" href="/integrations/cvv-shop">
+    Smoothly import products with potential, make them better and export the improved products back.
+  </Card>
+</CardGroup>
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+<Tip>
+WISEPIM is multiplatform, you can combine and match different platform. 
+You can import them from one platform and export to a different one.
+</Tip>
 
-```json
-"security": [
-  {
-    "bearerAuth": []
-  }
-]
-```
+<Note>
+  Do you have special requirements or need a platform that's not supported yet?
+
+  [Get in touch](https://swiftsync.ai/contact) to discuss the possibilities.
+</Note>
+
+## OpenAI API Token
+
+To start enriching your products with AI you need to supply an OpenAI API token
+

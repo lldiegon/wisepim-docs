@@ -59,22 +59,22 @@
     {
       "group": "Essentials",
       "pages": [
-        "import-products",
-        "bulk-editing",
-        "enrich-products",
-        "export-products"
+        "essentials/import-products",
+        "essentials/bulk-editing",
+        "essentials/enrich-products",
+        "essentials/export-products"
       ]
     },
     {
       "group": "Default pages",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets",
-        "development"
+        "default-pages/markdown",
+        "default-pages/code",
+        "default-pages/images",
+        "default-pages/settings",
+        "default-pages/navigation",
+        "default-pages/reusable-snippets",
+        "default-pages/development"
       ]
     },
     {

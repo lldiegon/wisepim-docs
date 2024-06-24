@@ -1,35 +1,61 @@
 ---
 title: 'Bulk Editing'
-description: 'Add image, video, and other HTML elements'
+description: "Edit 100's or 1000's of product at once."
 icon: 'table-list'
 ---
 
 <img
   style={{ borderRadius: '0.5rem' }}
-  src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
+  src="/images/bulk-editing-screenshot.png"
 />
 
-## Image
+## Actions you can do
+First you select all the products you would like to edit, then click on the red 'Bulk Editing' button and select the action.
 
-### Using Markdown
+<Tip>
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+You can use the filters and search before clicking on select all, to quickly get the right selection.
 
-```md
-![title](/path/image.jpg)
-```
+</Tip>
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
+### Change price
 
-### Using Embeds
+You can increase or decrease the price of the selected products in two ways:
+- By Percentage
+- By Fixed Amount
 
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
+You can also add ```-``` before the number you fill in to decrease the price.
+Useful for when products or purchasing costs increase for example.
 
-```html
-<img height="200" src="/path/image.jpg" />
-```
 
-## Embeds and HTML elements
+### Update Status
+
+Products can have the status 'Reviewed' or 'Unreviewed', when you import products they're 'Unreviewed' by default.
+It's intended to use as a marker for product data you've reviewed / checked after enriching them with ai.
+
+That way you can quickly select only the products that have gotten a quality check and use that selection to export it to your webshop.
+
+
+### Delete Selected Products
+
+Quickly remove products you don't need anymore from WISEPIM.
+
+### Find and Replace
+
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/images/find-and-replace-screenshot.png"
+/>
+
+Find and Replace can work on the following product information:
+- Product Name
+- Description
+- Reviewed Description
+
+The find and replace function is case-insensitive and will change all found occurrances in the selected target.
+
+
+## Video Tutorial
 
 <iframe
   width="560"
@@ -46,7 +72,7 @@ To get more customizability with images, you can also use [embeds](/writing-cont
 
 <Tip>
 
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
+WISEPIM supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
 
 </Tip>
 

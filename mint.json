@@ -27,8 +27,8 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Integrations",
+      "url": "integrations"
     }
   ],
   "anchors": [
@@ -53,33 +53,53 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "quickstart"
       ]
     },
     {
       "group": "Essentials",
+      "pages": [
+        "import-products",
+        "bulk-editing",
+        "enrich-products",
+        "export-products"
+      ]
+    },
+    {
+      "group": "Default pages",
       "pages": [
         "essentials/markdown",
         "essentials/code",
         "essentials/images",
         "essentials/settings",
         "essentials/navigation",
-        "essentials/reusable-snippets"
+        "essentials/reusable-snippets",
+        "development"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "General info",
       "pages": [
-        "api-reference/introduction"
+        "integrations/introduction"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        "integrations/magento",
+        "integrations/webshopimporter",
+        "integrations/woocommerce",
+        "integrations/shopify",
+        "integrations/lightspeed",
+        "integrations/cvv-shop"
       ]
     },
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "integrations/endpoint/get",
+        "integrations/endpoint/create",
+        "integrations/endpoint/delete"
       ]
     }
   ],

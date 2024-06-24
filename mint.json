@@ -78,9 +78,10 @@
       ]
     },
     {
-      "group": "General info",
+      "group": "Get Started",
       "pages": [
-        "integrations/introduction"
+        "integrations/introduction",
+        "integrations/openai"
       ]
     },
     {

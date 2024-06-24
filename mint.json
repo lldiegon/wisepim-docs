@@ -80,7 +80,7 @@
     {
       "group": "Get Started",
       "pages": [
-        "integrations/introduction",
+        "integrations/supported-platforms",
         "integrations/openai"
       ]
     },

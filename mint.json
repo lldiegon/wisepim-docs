@@ -62,7 +62,8 @@
         "essentials/import-products",
         "essentials/bulk-editing",
         "essentials/enrich-products",
-        "essentials/export-products"
+        "essentials/export-products",
+        "essentials/agencies"
       ]
     },
     {

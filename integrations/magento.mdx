@@ -8,7 +8,7 @@ icon: 'magento'
 
 To integrate with Magento 2, you'll need to set up API keys. Here's how to generate and configure them:
 
-### Generating API Keys
+### Step 1: Generating API Keys
 
 1. Log in to your Magento 2 Admin Panel
 2. Navigate to **System** > **Integrations**
@@ -18,7 +18,7 @@ To integrate with Magento 2, you'll need to set up API keys. Here's how to gener
    - Your Password: Enter your admin password
    - API: Select the resources this integration will have access to
 
-### Activating the Integration
+### Step 2: Activating the Integration in Magento
 
 1. After saving, click on the **Activate** link in the integrations grid
 2. Review the permissions and click **Allow**
@@ -28,17 +28,22 @@ To integrate with Magento 2, you'll need to set up API keys. Here's how to gener
    - Access Token
    - Access Token Secret
 
-### Using the API Keys
-
-Store these keys securely in your environment variables:
-
-```env
-MAGENTO_CONSUMER_KEY=your_consumer_key
-MAGENTO_CONSUMER_SECRET=your_consumer_secret
-MAGENTO_ACCESS_TOKEN=your_access_token
-MAGENTO_ACCESS_TOKEN_SECRET=your_access_token_secret
-```
-
 <Warning>
 Never commit these keys directly to your code or version control. Always use environment variables or a secure secrets management system.
 </Warning>
+
+### Step 3: Configuring in WISEPIM
+
+To configure your Magento API keys in WISEPIM:
+
+1. Log in to your WisePIM admin panel
+2. Navigate to **Settings** > **Integrations**
+3. Click on the **Magento** integration tile
+4. Enter your API credentials in the following fields:
+   - Consumer Key
+   - Consumer Secret
+   - Access Token
+   - Access Token Secret
+5. Click **Save** to store your credentials
+
+WISEPIM will securely encrypt and store these credentials for future use with your Magento integration.

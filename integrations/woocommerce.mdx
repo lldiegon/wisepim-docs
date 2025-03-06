@@ -24,3 +24,27 @@ Keep these credentials safe as you'll need to enter them in your WisePIM setting
 
 ## Security Note
 Never share your API keys publicly or commit them to version control. Store them securely and use environment variables when possible.
+
+## Adding API Keys to WisePIM
+
+After generating your WooCommerce API keys, follow these steps to configure them in WISEPIM:
+
+1. Log in to your WISEPIM account
+2. Navigate to **Settings** → **Integrations**
+3. Find and click on the **WooCommerce** integration tile
+4. Fill in the following fields:
+   - **Store URL**: Enter your WooCommerce store's URL (e.g., https://your-store.com)
+   - **Consumer Key**: Paste the Consumer Key generated from WooCommerce
+   - **Consumer Secret**: Paste the Consumer Secret generated from WooCommerce
+5. Click **Test Connection** to verify your credentials
+6. If the connection is successful, click **Save** to store your settings
+
+Your WooCommerce integration is now configured and ready to use. You can start syncing your products between WisePIM and WooCommerce.
+
+## Troubleshooting
+
+If you encounter connection issues:
+- Verify that your store URL is correct and includes 'https://'
+- Double-check that you've copied the API keys correctly
+- Ensure your WooCommerce store is accessible and running
+- Confirm that your WordPress site has REST API enabled

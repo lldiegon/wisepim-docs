@@ -1,0 +1,96 @@
+---
+title: 'Create Product'
+api: 'POST /api/products'
+description: 'Create a new product in the system'
+---
+
+Create a new product with the specified attributes and settings.
+
+### Body Parameters
+
+<ParamField body="sku" type="string" required>
+  Unique identifier for the product within a project
+</ParamField>
+
+<ParamField body="name" type="string" required>
+  Product name
+</ParamField>
+
+<ParamField body="project" type="integer" required>
+  ID of the project this product belongs to
+</ParamField>
+
+<ParamField body="description" type="string">
+  Rich text description of the product
+</ParamField>
+
+<ParamField body="short_description" type="string">
+  Brief product description for listings
+</ParamField>
+
+<ParamField body="price" type="decimal">
+  Product price (defaults to 0.00)
+</ParamField>
+
+<ParamField body="product_type" type="string" default="simple">
+  Type of product. One of: simple, configurable, virtual, bundle, grouped
+</ParamField>
+
+<ParamField body="status" type="string" default="active">
+  Product status. One of: active, inactive, pending, archived
+</ParamField>
+
+<ParamField body="categories" type="array">
+  Array of category IDs this product belongs to
+</ParamField>
+
+<ParamField body="attributes" type="object">
+  Key-value pairs of product attributes and their values
+</ParamField>
+
+### Response
+
+<ResponseField name="id" type="integer">
+  The unique identifier for the created product
+</ResponseField>
+
+<ResponseField name="sku" type="string">
+  The product SKU
+</ResponseField>
+
+<ResponseField name="created_at" type="string">
+  Timestamp when the product was created
+</ResponseField>
+
+<RequestExample>
+```json
+{
+  "sku": "PROD-001",
+  "name": "Example Product",
+  "project": 1,
+  "description": "Detailed product description",
+  "short_description": "Brief overview",
+  "price": 99.99,
+  "product_type": "simple",
+  "status": "active",
+  "categories": [1, 2],
+  "attributes": {
+    "color": "blue",
+    "size": "medium"
+  }
+}
+```
+</RequestExample>
+
+<ResponseExample>
+```json
+{
+  "id": 1,
+  "sku": "PROD-001",
+  "name": "Example Product",
+  "created_at": "2024-01-01T12:00:00Z",
+  "status": "active",
+  "project": 1
+}
+```
+</ResponseExample> 

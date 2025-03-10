@@ -1,0 +1,66 @@
+---
+title: 'Get Product'
+api: 'GET /api/products/{id}'
+description: 'Retrieve a single product by ID'
+---
+
+Returns detailed information about a specific product.
+
+### Path Parameters
+
+<ParamField path="id" type="integer" required>
+  The ID of the product to retrieve
+</ParamField>
+
+### Response
+
+<ResponseField name="id" type="integer">
+  Product ID
+</ResponseField>
+
+<ResponseField name="sku" type="string">
+  Product SKU
+</ResponseField>
+
+<ResponseField name="name" type="string">
+  Product name
+</ResponseField>
+
+<ResponseField name="description" type="string">
+  Full product description
+</ResponseField>
+
+<ResponseField name="attributes" type="object">
+  Product attribute values
+</ResponseField>
+
+<ResponseField name="categories" type="array">
+  List of categories the product belongs to
+</ResponseField>
+
+<ResponseExample>
+```json
+{
+  "id": 1,
+  "sku": "PROD-001",
+  "name": "Example Product",
+  "description": "Detailed description",
+  "short_description": "Brief overview",
+  "price": 99.99,
+  "status": "active",
+  "product_type": "simple",
+  "created_at": "2024-01-01T12:00:00Z",
+  "updated_at": "2024-01-01T12:00:00Z",
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics"
+    }
+  ],
+  "attributes": {
+    "color": "blue",
+    "size": "medium"
+  }
+}
+```
+</ResponseExample> 

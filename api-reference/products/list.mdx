@@ -1,0 +1,73 @@
+---
+title: 'List Products'
+api: 'GET /api/products'
+description: 'Retrieve a list of products'
+---
+
+Returns a paginated list of products. You can filter and sort the results using query parameters.
+
+### Query Parameters
+
+<ParamField query="project" type="integer">
+  Filter products by project ID
+</ParamField>
+
+<ParamField query="status" type="string">
+  Filter by status (active, inactive, pending, archived)
+</ParamField>
+
+<ParamField query="product_type" type="string">
+  Filter by product type (simple, configurable, virtual, bundle, grouped)
+</ParamField>
+
+<ParamField query="category" type="integer">
+  Filter by category ID
+</ParamField>
+
+<ParamField query="page" type="integer" default="1">
+  Page number for pagination
+</ParamField>
+
+<ParamField query="page_size" type="integer" default="20">
+  Number of items per page
+</ParamField>
+
+### Response
+
+<ResponseField name="count" type="integer">
+  Total number of products matching the filters
+</ResponseField>
+
+<ResponseField name="next" type="string">
+  URL for the next page of results
+</ResponseField>
+
+<ResponseField name="previous" type="string">
+  URL for the previous page of results
+</ResponseField>
+
+<ResponseField name="results" type="array">
+  List of product objects
+</ResponseField>
+
+<ResponseExample>
+```json
+{
+  "count": 100,
+  "next": "https://api.example.com/products?page=2",
+  "previous": null,
+  "results": [
+    {
+      "id": 1,
+      "sku": "PROD-001",
+      "name": "Example Product",
+      "status": "active",
+      "product_type": "simple",
+      "created_at": "2024-01-01T12:00:00Z",
+      "project": 1
+    }
+    // ... more products
+  ]
+}
+```
+</ResponseExample> 

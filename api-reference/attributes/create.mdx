@@ -1,0 +1,66 @@
+---
+title: 'Create Product Attribute'
+api: 'POST /api/attributes'
+description: 'Create a new product attribute'
+---
+
+Create a new attribute for products.
+
+### Body Parameters
+
+<ParamField body="code" type="string" required>
+  Unique identifier for the attribute
+</ParamField>
+
+<ParamField body="label" type="string" required>
+  Display label for the attribute
+</ParamField>
+
+<ParamField body="project" type="integer" required>
+  Project ID
+</ParamField>
+
+<ParamField body="attribute_type" type="string" required>
+  Type of attribute. One of: text, textarea, number, decimal, date, datetime, boolean, select, multiselect, color, image, file
+</ParamField>
+
+<ParamField body="is_required" type="boolean" default="false">
+  Whether the attribute is required
+</ParamField>
+
+<ParamField body="options" type="array">
+  Array of options for select/multiselect types
+</ParamField>
+
+<ParamField body="validation_rules" type="object">
+  Validation rules for the attribute
+</ParamField>
+
+<RequestExample>
+```json
+{
+  "code": "color",
+  "label": "Color",
+  "project": 1,
+  "attribute_type": "select",
+  "is_required": true,
+  "options": ["red", "blue", "green"],
+  "validation_rules": {
+    "min_selections": 1,
+    "max_selections": 1
+  }
+}
+```
+</RequestExample>
+
+<ResponseExample>
+```json
+{
+  "id": 1,
+  "code": "color",
+  "label": "Color",
+  "attribute_type": "select",
+  "created_at": "2024-01-01T12:00:00Z"
+}
+```
+</ResponseExample> 

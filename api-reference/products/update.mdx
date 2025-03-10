@@ -1,0 +1,56 @@
+---
+title: 'Update Product'
+api: 'PUT /api/products/{id}'
+description: 'Update an existing product'
+---
+
+Update the details of an existing product.
+
+### Path Parameters
+
+<ParamField path="id" type="integer" required>
+  The ID of the product to update
+</ParamField>
+
+### Body Parameters
+
+<ParamField body="name" type="string">
+  Updated product name
+</ParamField>
+
+<ParamField body="description" type="string">
+  Updated product description
+</ParamField>
+
+<ParamField body="status" type="string">
+  Updated product status
+</ParamField>
+
+<ParamField body="attributes" type="object">
+  Updated attribute values
+</ParamField>
+
+<RequestExample>
+```json
+{
+  "name": "Updated Product Name",
+  "description": "Updated description",
+  "status": "active",
+  "attributes": {
+    "color": "red",
+    "size": "large"
+  }
+}
+```
+</RequestExample>
+
+<ResponseExample>
+```json
+{
+  "id": 1,
+  "sku": "PROD-001",
+  "name": "Updated Product Name",
+  "updated_at": "2024-01-01T13:00:00Z"
+}
+```
+</ResponseExample> 

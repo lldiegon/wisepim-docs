@@ -1,0 +1,53 @@
+---
+title: 'Create Category'
+api: 'POST /api/categories'
+description: 'Create a new product category'
+---
+
+Create a new category for organizing products.
+
+### Body Parameters
+
+<ParamField body="name" type="string" required>
+  Category name
+</ParamField>
+
+<ParamField body="project" type="integer" required>
+  Project ID
+</ParamField>
+
+<ParamField body="parent" type="integer">
+  Parent category ID for nested categories
+</ParamField>
+
+<ParamField body="description" type="string">
+  Category description
+</ParamField>
+
+<ParamField body="is_active" type="boolean" default="true">
+  Whether the category is active
+</ParamField>
+
+<RequestExample>
+```json
+{
+  "name": "Electronics",
+  "project": 1,
+  "parent": null,
+  "description": "Electronic products category",
+  "is_active": true
+}
+```
+</RequestExample>
+
+<ResponseExample>
+```json
+{
+  "id": 1,
+  "name": "Electronics",
+  "slug": "electronics",
+  "project": 1,
+  "created_at": "2024-01-01T12:00:00Z"
+}
+```
+</ResponseExample> 

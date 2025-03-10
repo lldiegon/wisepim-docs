@@ -1,0 +1,60 @@
+---
+title: 'Create Project'
+api: 'POST /api/projects'
+description: 'Create a new project'
+---
+
+Create a new project for managing products and their attributes.
+
+### Body Parameters
+
+<ParamField body="name" type="string" required>
+  Project name
+</ParamField>
+
+<ParamField body="description" type="string">
+  Project description
+</ParamField>
+
+<ParamField body="status" type="string" default="active">
+  Project status. One of: active, completed, on_hold, cancelled
+</ParamField>
+
+<ParamField body="ai_settings" type="object">
+  AI configuration settings
+</ParamField>
+
+<ParamField body="attribute_settings" type="object">
+  Global attribute behavior settings
+</ParamField>
+
+<RequestExample>
+```json
+{
+  "name": "Summer Collection 2024",
+  "description": "Summer fashion collection",
+  "status": "active",
+  "ai_settings": {
+    "models": {
+      "description": "gpt-4",
+      "titles": "gpt-3.5-turbo"
+    },
+    "quality_checks": {
+      "enabled": true,
+      "min_words": 100
+    }
+  }
+}
+```
+</RequestExample>
+
+<ResponseExample>
+```json
+{
+  "id": 1,
+  "name": "Summer Collection 2024",
+  "status": "active",
+  "created_at": "2024-01-01T12:00:00Z"
+}
+```
+</ResponseExample>

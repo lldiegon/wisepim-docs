@@ -103,11 +103,43 @@
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "API Reference",
       "pages": [
-        "integrations/endpoint/get",
-        "integrations/endpoint/create",
-        "integrations/endpoint/delete"
+        {
+          "group": "Products",
+          "pages": [
+            "api-reference/products/create",
+            "api-reference/products/list",
+            "api-reference/products/get",
+            "api-reference/products/update",
+            "api-reference/products/delete"
+          ]
+        },
+        {
+          "group": "Categories",
+          "pages": [
+            "api-reference/categories/create"
+          ]
+        },
+        {
+          "group": "Attributes",
+          "pages": [
+            "api-reference/attributes/create"
+          ]
+        },
+        {
+          "group": "Projects",
+          "pages": [
+            "api-reference/projects/create"
+          ]
+        },
+        {
+          "group": "Prompts",
+          "pages": [
+            "api-reference/prompts/create",
+            "api-reference/prompts/versions"
+          ]
+        }
       ]
     }
   ],

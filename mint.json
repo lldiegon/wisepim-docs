@@ -35,7 +35,7 @@
     {
       "name": "Homepage",
       "icon": "house-chimney",
-      "url": "https://wisepim.swiftsync.ai"
+      "url": "https://wisepim.com"
     },
     {
       "name": "Custom Development",
@@ -45,7 +45,7 @@
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://swiftsync.ai/blog"
+      "url": "https://wisepim.com/blog"
     }
   ],
   "navigation": [

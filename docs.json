@@ -139,8 +139,8 @@
     }
   },
   "logo": {
-    "light": "/logo/Swiftsync-ai-logo-transparant.png",
-    "dark": "/logo/Swiftsync-ai-logo-transparant.png"
+    "dark": "/logo/wisepim-logo-horizontal-transparant-darkmode.png",
+    "light": "/logo/wisepim-logo-horizontal-transparant-lightmode.png"
   },
   "navbar": {
     "links": [
@@ -152,7 +152,7 @@
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://wisepim.swiftsync.ai/products"
+      "href": "https://wisepim.com/products"
     }
   },
   "footer": {

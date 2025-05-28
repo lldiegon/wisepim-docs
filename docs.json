@@ -131,6 +131,11 @@
           "icon": "house"
         },
         {
+          "anchor": "Latest changes",
+          "href": "https://wisepim.com/changelog",
+          "icon": "history"
+        },
+        {
           "anchor": "Blog",
           "href": "https://wisepim.com/blog",
           "icon": "newspaper"

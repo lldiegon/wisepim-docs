@@ -1,95 +1,145 @@
 ---
-title: 'Quickstart'
-description: 'Start enriching your products in under 10 minutes, and get more sales.'
-icon: 'zap'
+title: 'Quick Start Guide'
+description: 'Get up and running with WISEPIM in under 10 minutes. Import, enrich, and export your products to boost conversions.'
+icon: 'rocket'
 ---
 
-## General Workflow of using WISEPIM
-1. [Import products](/essentials/importing-products) to get your products into WISEPIM.
-2. [Bulk Edit your products](/essentials/bulk-editing) to quickly apply changes to a lot of products at once.
-3. [Enrich your products with AI](/essentials/enriching-products) to get more product information and increase their perceived value.
-4. [Export products](/essentials/export-products) to send your improved products to your webshop.
+## Get Started with WISEPIM in 4 Simple Steps
 
+Transform your product catalog and boost conversions in minutes. Follow this step-by-step guide to experience the power of AI-driven product information management.
 
-## Setup your development
+<Steps>
+  <Step title="Connect Your Platform">
+    [Set up your integration](/integrations/supported-platforms) with your e-commerce platform (Magento 2, WooCommerce, Shopify, Lightspeed, or CCV Shop).
+  </Step>
+  <Step title="Import Your Products">
+    [Import your products](/essentials/import-products) from your connected platform into WISEPIM for enrichment and optimization.
+  </Step>
+  <Step title="Enrich with AI">
+    [Use AI to enrich your products](/essentials/enrich-products) with compelling descriptions, optimized titles, and detailed attributes.
+  </Step>
+  <Step title="Export Back to Your Store">
+    [Export your enhanced products](/essentials/export-products) back to your e-commerce platform and watch your conversions improve.
+  </Step>
+</Steps>
 
-Learn how to update your docs locally and and deploy them to the public.
+## The WISEPIM Workflow
 
-### Edit and preview
+Master the complete product enrichment process:
 
-<AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `mint.json` is): ``` mintlify dev ```
-  </Accordion>
-</AccordionGroup>
-
-### Deploy your changes
-
-<AccordionGroup>
-
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
-
-</AccordionGroup>
-
-
-## Update your docs
-
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
-
-<CardGroup>
-
-<Card title="Style Your Docs" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
-
-<Card
-  title="Add API Endpoints"
-  icon="square-code"
-  href="/api-playground/configuration"
->
-  Implement your OpenAPI spec and enable API user interaction.
-</Card>
-
-<Card
-  title="Integrate Analytics"
-  icon="chart-mixed"
-  href="/analytics/supported-integrations"
->
-  Draw insights from user interactions with your documentation.
-</Card>
-
-<Card
-  title="Host on a Custom Domain"
-  icon="browser"
-  href="/settings/custom-domain/subdomain"
->
-  Keep your docs on your own website's subdomain.
-</Card>
-
+<CardGroup cols={2}>
+  <Card
+    title="1. Smart Import"
+    icon="download"
+    href="/essentials/import-products"
+  >
+    Import products from any supported platform with intelligent field mapping and validation.
+  </Card>
+  <Card
+    title="2. Bulk Operations"
+    icon="layers"
+    href="/essentials/bulk-editing"
+  >
+    Apply changes to hundreds or thousands of products simultaneously with advanced filtering.
+  </Card>
+  <Card
+    title="3. AI Enrichment"
+    icon="brain"
+    href="/essentials/enrich-products"
+  >
+    Generate SEO-optimized descriptions, titles, and attributes using our proprietary AI technology.
+  </Card>
+  <Card
+    title="4. Seamless Export"
+    icon="upload"
+    href="/essentials/export-products"
+  >
+    Push your enhanced product data back to your store with one-click synchronization.
+  </Card>
 </CardGroup>
+
+## Before You Begin
+
+### Prerequisites
+
+<AccordionGroup>
+  <Accordion icon="store" title="E-commerce Platform Access">
+    Ensure you have admin access to your e-commerce platform and API credentials ready. We support:
+    - Magento 2 (API tokens)
+    - WooCommerce (REST API keys)
+    - Shopify (Private app credentials)
+    - Lightspeed (API keys)
+    - CCV Shop (API access)
+  </Accordion>
+  <Accordion icon="key" title="OpenAI API Key (Optional)">
+    For AI enrichment features, you'll need an OpenAI API key. Get yours at [OpenAI Platform](https://platform.openai.com/account/api-keys).
+  </Accordion>
+</AccordionGroup>
+
+### First-Time Setup
+
+<AccordionGroup>
+  <Accordion icon="project-diagram" title="Create Your First Project">
+    Projects help organize your product catalogs. Create a project for each brand, store, or product line you manage.
+  </Accordion>
+  <Accordion icon="settings" title="Configure Attributes">
+    Set up custom product attributes that match your business needs. WISEPIM supports text, numbers, dates, selections, and more.
+  </Accordion>
+  <Accordion icon="wand-magic-sparkles" title="Set Up AI Prompts">
+    Create reusable prompt templates for consistent, brand-aligned content generation across all your products.
+  </Accordion>
+</AccordionGroup>
+
+## Quick Wins
+
+Start seeing results immediately with these powerful features:
+
+<CardGroup cols={2}>
+  <Card
+    title="Instant SEO Optimization"
+    icon="search"
+  >
+    Generate SEO-friendly product titles and descriptions that rank higher in search results.
+  </Card>
+  <Card
+    title="Bulk Translation"
+    icon="languages"
+  >
+    Translate your entire catalog to multiple languages for global market expansion.
+  </Card>
+  <Card
+    title="Quality Validation"
+    icon="shield-check"
+  >
+    Automatically detect and fix common product data issues like missing descriptions or incorrect formatting.
+  </Card>
+  <Card
+    title="Conversion Optimization"
+    icon="trending-up"
+  >
+    Use our proven templates to create product descriptions that convert browsers into buyers.
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+<CardGroup cols={1}>
+  <Card
+    title="Platform Integrations"
+    icon="plug"
+    href="/integrations/supported-platforms"
+  >
+    Detailed setup guides for all supported e-commerce platforms.
+  </Card>
+  <Card
+    title="Contact Support"
+    icon="headset"
+    href="mailto:contact@swiftsync.ai"
+  >
+    Our team is here to help you succeed. Reach out with any questions or setup assistance.
+  </Card>
+</CardGroup>
+
+## Ready to Transform Your Catalog?
+
+With WISEPIM set up, you're ready to transform your product catalog into a conversion-driving powerhouse. Start with a small batch of products to see the immediate impact, then scale up to your entire inventory.

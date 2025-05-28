@@ -1,0 +1,149 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "WISEPIM Documentation",
+  "logo": {
+    "dark": "/logo/Swiftsync-ai-logo-transparant.png",
+    "light": "/logo/Swiftsync-ai-logo-transparant.png"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#E71447",
+    "light": "#E71447",
+    "dark": "#E71447",
+    "anchors": {
+      "from": "#0D9373",
+      "to": "#07C983"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:contact@swiftsync.ai"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://wisepim.swiftsync.ai/products"
+  },
+  "tabs": [
+    {
+      "name": "Integrations",
+      "url": "integrations"
+    },
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Homepage",
+      "icon": "house-chimney",
+      "url": "https://wisepim.com"
+    },
+    {
+      "name": "Custom Development",
+      "icon": "code",
+      "url": "https://swiftsync.ai"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://wisepim.com/blog"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "introduction",
+        "quickstart"
+      ]
+    },
+    {
+      "group": "Essentials",
+      "pages": [
+        "essentials/import-products",
+        "essentials/bulk-editing",
+        "essentials/enrich-products",
+        "essentials/export-products",
+        "essentials/agencies"
+      ]
+    },
+    {
+      "group": "Default pages",
+      "pages": [
+        "default-pages/markdown",
+        "default-pages/code",
+        "default-pages/images",
+        "default-pages/settings",
+        "default-pages/navigation",
+        "default-pages/reusable-snippets",
+        "default-pages/development"
+      ]
+    },
+    {
+      "group": "Get Started",
+      "pages": [
+        "integrations/supported-platforms",
+        "integrations/openai"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        "integrations/magento",
+        "integrations/webshopimporter",
+        "integrations/woocommerce",
+        "integrations/shopify",
+        "integrations/lightspeed",
+        "integrations/cvv-shop"
+      ]
+    },
+    {
+      "group": "Suppliers",
+      "pages": [
+        "integrations/suppliers/Shots"
+      ]
+    },
+    {
+      "group": "Products",
+      "pages": [
+        "api-reference/products/create",
+        "api-reference/products/list",
+        "api-reference/products/get",
+        "api-reference/products/update",
+        "api-reference/products/delete"
+      ]
+    },
+    {
+      "group": "Categories",
+      "pages": [
+        "api-reference/categories/create"
+      ]
+    },
+    {
+      "group": "Attributes",
+      "pages": [
+        "api-reference/attributes/create"
+      ]
+    },
+    {
+      "group": "Projects",
+      "pages": [
+        "api-reference/projects/create"
+      ]
+    },
+    {
+      "group": "Prompts",
+      "pages": [
+        "api-reference/prompts/create",
+        "api-reference/prompts/versions"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "youtube": "https://www.youtube.com/channel/UC5sQ48mV3sYEBme01xvVIXw",
+    "linkedin": "https://www.linkedin.com/company/swiftsyncai/"
+  }
+} 

@@ -1,6 +1,6 @@
 ---
 title: 'Bulk Editing'
-description: "Edit 100's or 1000's of products at once."
+description: 'Efficiently manage multiple products at once with powerful bulk editing operations'
 icon: 'table-list'
 ---
 
@@ -9,83 +9,575 @@ icon: 'table-list'
   src="/images/bulk-editing-screenshot.png"
 />
 
-## Actions you can do
-First you select all the products you would like to edit, then click on the red 'Bulk Editing' button and select the action.
+# Bulk Editing
 
-<Tip>
+Bulk Editing is a powerful feature that allows you to make changes to multiple products simultaneously, saving time and ensuring consistency across your product catalog. Whether you need to update prices, change statuses, delete products, or perform find-and-replace operations, bulk editing streamlines these tasks into efficient, one-click operations.
 
-You can use the filters and search before clicking on select all, to quickly get the right selection.
+<Info>
+Bulk editing operations can be applied to selected products or all products matching your current filters. This flexibility allows you to target specific subsets of your catalog or make sweeping changes across your entire inventory.
+</Info>
 
-</Tip>
+## What Bulk Editing Does
 
-### Change price
+Bulk editing helps you:
 
-You can increase or decrease the price of the selected products in two ways:
-- By Percentage
-- By Fixed Amount
+- **Save Time**: Update hundreds or thousands of products in seconds
+- **Ensure Consistency**: Apply uniform changes across product groups
+- **Manage Pricing**: Adjust prices by percentage or fixed amounts
+- **Update Status**: Change review status for multiple products
+- **Clean Data**: Find and replace text across product information
+- **Organize Catalog**: Delete outdated or unwanted products in bulk
 
+## Available Bulk Operations
 
-Useful when for example product purchasing costs increase or you need to quickly adjust a lot of products for inflation.
+### Price Changes
 
-You can also add ```-``` before the number you fill in to decrease the price.
+**Percentage-Based Adjustments**
+- Increase or decrease prices by a percentage
+- Apply seasonal discounts or markup adjustments
+- Maintain relative pricing relationships
+- Ideal for sales, promotions, or market adjustments
 
-### Update Status
+**Fixed Amount Changes**
+- Add or subtract specific amounts from prices
+- Apply flat rate adjustments across products
+- Useful for cost-based pricing updates
+- Simple adjustments for shipping or handling fees
 
-Products can have the status 'Reviewed' or 'Unreviewed', when you import products they're 'Unreviewed' by default.
-It's intended to use as a marker for product data you've reviewed / checked after enriching them with ai.
+**Use Cases**:
+- Holiday sales and promotional pricing
+- Cost inflation adjustments
+- Competitive pricing updates
+- Currency conversion adjustments
 
-That way you can quickly select only the products that have gotten a quality check and use that selection to export it to your webshop.
+### Status Updates
 
+**Review Status Management**
+- Mark products as "Reviewed" or "Unchecked"
+- Track content quality and approval workflow
+- Organize products by completion status
+- Manage editorial and approval processes
 
-### Delete Selected Products
+**Workflow Integration**:
+- Batch approve reviewed content
+- Reset status for re-review cycles
+- Organize products by review stage
+- Support quality assurance processes
 
-Quickly remove products you don't need anymore from WISEPIM.
+### Product Deletion
 
-### Find and Replace
+**Safe Bulk Deletion**
+- Remove multiple products simultaneously
+- Confirmation required to prevent accidents
+- Irreversible operation with safety checks
+- Clean up discontinued or outdated products
+
+**Deletion Scenarios**:
+- Remove discontinued product lines
+- Clean up test or duplicate products
+- Archive seasonal or temporary items
+- Maintain catalog hygiene
+
 
 <img
   style={{ borderRadius: '0.5rem' }}
   src="/images/find-and-replace-screenshot.png"
 />
 
-Find and Replace can work on the following product information:
-- Product Name
-- Description
-- Reviewed Description
+### Find and Replace
 
-The find and replace function is case-insensitive and will change all found occurrances in the selected target.
+**Text Replacement Operations**
+- Search and replace text across product fields
+- Support for multiple field types simultaneously
+- Case-sensitive and case-insensitive options
+- Advanced text transformation capabilities
 
-<Tip>
+**Supported Fields**:
+- Product names/titles
+- Product descriptions
+- Reviewed descriptions
+- Multiple field combinations
 
-You can use Find and Replace to change all the urls or brand names in a description.
+`[Screenshot showing the bulk editing modal with different operation types]`
 
-</Tip>
+## Using Bulk Editing
 
-<Tip>
+### Accessing Bulk Editing
 
-It's also possible to leave the 'Replace with' field empty to remove text.
+**From Product Selection**
+1. **Select Products**: Use checkboxes to select specific products
+2. **Click Bulk Editing**: Access the bulk editing button in the toolbar
+3. **Choose Operation**: Select the type of change you want to make
+4. **Configure Settings**: Set parameters for your chosen operation
+5. **Apply Changes**: Execute the bulk operation
 
-</Tip>
+**Apply to All Filtered Products**
+- Use current filter settings to define scope
+- Apply operations to all products matching filters
+- Useful for large-scale operations
+- Processes products beyond current page view
 
-## Video Tutorial
+### Selection Methods
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/LDU_Txk06tM?si=rb5tf5_qen-F4EGJ"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
+**Individual Selection**
+- Check specific products using row checkboxes
+- Build custom selection across multiple pages
+- Precise control over affected products
+- Ideal for targeted operations
 
-<br />
+**Filter-Based Selection**
+- Use search and filter tools to define criteria
+- Apply operations to all matching products
+- Efficient for large-scale changes
+- Automatic inclusion of new matching products
 
-<Tip>
+**Selection Indicators**:
+- Visual feedback shows selected count
+- Clear indication of selection scope
+- Warning for large operations
+- Confirmation for destructive actions
 
-WISEPIM supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
+`[Screenshot showing product selection interface with bulk editing button]`
 
-</Tip>
+## Price Change Operations
 
+### Percentage-Based Changes
 
+**Setting Up Percentage Changes**
+1. **Select "Change Price"**: Choose the price change operation
+2. **Choose "By Percentage"**: Select percentage-based adjustment
+3. **Enter Percentage**: Input the percentage change (positive or negative)
+4. **Preview Impact**: Review the changes before applying
+5. **Apply Changes**: Execute the price adjustment
+
+**Percentage Examples**:
+- **+20%**: Increase prices by 20% (€100 becomes €120)
+- **-15%**: Decrease prices by 15% (€100 becomes €85)
+- **+5%**: Small markup adjustment (€100 becomes €105)
+- **-50%**: Major sale discount (€100 becomes €50)
+
+### Fixed Amount Changes
+
+**Setting Up Fixed Changes**
+1. **Select "Change Price"**: Choose the price change operation
+2. **Choose "By Fixed Amount"**: Select fixed amount adjustment
+3. **Enter Amount**: Input the amount to add or subtract
+4. **Review Changes**: Check the impact on selected products
+5. **Apply Changes**: Execute the price adjustment
+
+**Fixed Amount Examples**:
+- **+€10**: Add €10 to all prices (€100 becomes €110)
+- **-€5**: Subtract €5 from all prices (€100 becomes €95)
+- **+€2.50**: Add shipping cost (€100 becomes €102.50)
+- **-€25**: Bulk discount amount (€100 becomes €75)
+
+### Price Change Best Practices
+
+**Before Making Changes**:
+- Review current pricing strategy
+- Consider market conditions and competition
+- Test changes on a small subset first
+- Backup pricing data if needed
+
+**Calculation Considerations**:
+- Percentage changes compound with existing prices
+- Fixed amounts may create pricing inconsistencies
+- Consider rounding rules for final prices
+- Review minimum and maximum price thresholds
+
+`[Screenshot showing price change configuration with percentage and fixed amount options]`
+
+## Status Update Operations
+
+### Review Status Management
+
+**Status Options**
+- **Unchecked**: Products requiring review or attention
+- **Reviewed**: Products that have been approved or completed
+- **Workflow Integration**: Supports editorial and approval processes
+
+**Common Use Cases**:
+- Mark imported products as "Unchecked" for review
+- Approve content changes by marking as "Reviewed"
+- Reset status for quality assurance cycles
+- Organize products by completion stage
+
+### Status Update Workflow
+
+**Bulk Status Changes**
+1. **Select Products**: Choose products to update
+2. **Choose "Update Status"**: Select the status change operation
+3. **Select New Status**: Pick "Unchecked" or "Reviewed"
+4. **Confirm Changes**: Review the status update
+5. **Apply Changes**: Execute the status change
+
+**Workflow Benefits**:
+- Streamline approval processes
+- Track content completion
+- Organize review queues
+- Support team collaboration
+
+`[Screenshot showing status update interface with review options]`
+
+## Find and Replace Operations
+
+### Text Replacement Setup
+
+**Field Selection Options**
+- **Product Name**: Replace text in product titles
+- **Description**: Update product descriptions
+- **Reviewed Description**: Modify reviewed content
+- **Multiple Fields**: Apply changes across field combinations
+- **All Text Fields**: Comprehensive text replacement
+
+### Advanced Find and Replace
+
+**Search Configuration**
+1. **Choose Fields**: Select where to search for text
+2. **Enter Search Text**: Input the text to find
+3. **Enter Replacement**: Specify the replacement text
+4. **Configure Options**: Set case sensitivity and transformations
+5. **Apply Changes**: Execute the find and replace operation
+
+**Advanced Options**:
+- **Case Sensitivity**: Match exact case or ignore case differences
+- **Case Transformation**: Change case of replacement text
+- **Multiple Field Support**: Search across multiple fields simultaneously
+- **Preview Mode**: See changes before applying them
+
+### Case Transformation Options
+
+**Available Transformations**:
+- **Keep Original**: Maintain the case of replacement text
+- **lowercase**: Convert replacement to all lowercase
+- **UPPERCASE**: Convert replacement to all uppercase
+- **Title Case**: Capitalize first letter of each word
+
+**Transformation Examples**:
+- Original: "smartphone" → "SMARTPHONE" (uppercase)
+- Original: "TABLET" → "tablet" (lowercase)
+- Original: "laptop computer" → "Laptop Computer" (title case)
+
+### Find and Replace Use Cases
+
+**Common Scenarios**:
+- Update brand names across product catalog
+- Standardize terminology and descriptions
+- Fix spelling errors or typos
+- Update product specifications
+- Modify promotional language
+
+**Best Practices**:
+- Test with a small selection first
+- Use case-sensitive matching when appropriate
+- Review replacement text carefully
+- Consider using preview mode for complex changes
+
+`[Screenshot showing find and replace interface with field selection and case options]`
+
+## Product Deletion Operations
+
+### Safe Deletion Process
+
+**Deletion Workflow**
+1. **Select Products**: Choose products to delete
+2. **Choose "Delete Products"**: Select the deletion operation
+3. **Confirm Deletion**: Check the confirmation checkbox
+4. **Review Selection**: Verify products to be deleted
+5. **Execute Deletion**: Apply the irreversible deletion
+
+**Safety Features**:
+- **Confirmation Required**: Must explicitly confirm deletion intent
+- **Clear Warnings**: Prominent notices about irreversible action
+- **Selection Review**: Shows exactly which products will be deleted
+- **Backup Recommendations**: Suggests data backup before deletion
+
+### Deletion Considerations
+
+**Before Deleting Products**:
+- Backup product data if recovery might be needed
+- Review dependencies (orders, analytics, etc.)
+- Consider archiving instead of deleting
+- Verify selection accuracy
+
+**When to Use Bulk Deletion**:
+- Removing discontinued product lines
+- Cleaning up test or duplicate products
+- Archiving seasonal items
+- Maintaining catalog hygiene
+
+**Alternatives to Deletion**:
+- Change product status to inactive
+- Move products to archive categories
+- Use tags to mark for future review
+- Export data before deletion
+
+`[Screenshot showing deletion confirmation interface with safety warnings]`
+
+## Apply to All vs. Selected Products
+
+### Selected Products Mode
+
+**How It Works**:
+- Operates only on manually selected products
+- Provides precise control over affected items
+- Shows exact count of selected products
+- Immediate feedback and results
+
+**Best For**:
+- Targeted operations on specific products
+- Testing changes on small groups
+- Precise control requirements
+- Mixed product types or categories
+
+### Apply to All Filtered Products
+
+**How It Works**:
+- Uses current search and filter settings
+- Applies to all products matching criteria
+- Processes beyond current page view
+- Handles large datasets efficiently
+
+**Best For**:
+- Large-scale operations
+- Category-wide changes
+- Filter-based product groups
+- Comprehensive updates
+
+**Filter Integration**:
+- Respects all active filters
+- Includes search terms and criteria
+- Works with category selections
+- Honors status and attribute filters
+
+`[Screenshot showing the difference between selected products and apply to all options]`
+
+## Monitoring Bulk Operations
+
+### Operation Tracking
+
+**Real-Time Progress**
+- Operations appear in Process Tracker
+- Live progress updates and status
+- Success and failure counts
+- Estimated completion times
+
+**Operation Details**:
+- Number of products affected
+- Success and failure rates
+- Error messages for failed items
+- Processing duration and performance
+
+### Results and Feedback
+
+**Success Notifications**
+- Confirmation of completed operations
+- Count of successfully updated products
+- Summary of changes made
+- Links to view updated products
+
+**Error Handling**:
+- Clear error messages for failed operations
+- Specific details about what went wrong
+- Suggestions for resolving issues
+- Option to retry failed operations
+
+`[Screenshot showing bulk operation progress in Process Tracker]`
+
+## Best Practices for Bulk Editing
+
+### Planning Bulk Operations
+
+**Before Starting**:
+- Define clear objectives for the operation
+- Test changes on a small subset first
+- Backup important data when appropriate
+- Review current filters and selections
+
+**Operation Strategy**:
+- Start with less critical products
+- Use filters to target specific groups
+- Plan operations during low-traffic periods
+- Monitor results and adjust as needed
+
+### Quality Assurance
+
+**Validation Steps**:
+- Preview changes when possible
+- Double-check selection criteria
+- Verify operation parameters
+- Review results after completion
+
+**Error Prevention**:
+- Use descriptive search terms
+- Test find-and-replace patterns
+- Validate price change calculations
+- Confirm deletion selections carefully
+
+### Performance Optimization
+
+**Large Operations**:
+- Use "Apply to All" for efficiency
+- Schedule during off-peak hours
+- Monitor system performance
+- Break very large operations into batches
+
+**Resource Management**:
+- Avoid multiple simultaneous bulk operations
+- Monitor Process Tracker for progress
+- Plan for processing time requirements
+- Consider impact on system performance
+
+`[Screenshot showing bulk editing best practices checklist]`
+
+## Troubleshooting Common Issues
+
+### "No Products Selected" Error
+
+**Cause**: Attempting bulk operation without selecting products
+
+**Solutions**:
+- Select products using checkboxes
+- Use "Apply to All" if targeting filtered products
+- Verify filters are returning results
+- Check that products exist in current view
+
+### "Operation Failed" Errors
+
+**Common Causes**:
+- Invalid price values or calculations
+- Text encoding issues in find-and-replace
+- Network connectivity problems
+- System resource limitations
+
+**Resolution Steps**:
+- Check input values for validity
+- Verify text contains expected characters
+- Retry operation after brief delay
+- Contact support for persistent issues
+
+### "Partial Success" Results
+
+**When This Happens**:
+- Some products update successfully, others fail
+- Mixed results due to data quality issues
+- Individual product validation failures
+- System limitations or constraints
+
+**How to Handle**:
+- Review error details for failed items
+- Fix data issues and retry failed products
+- Use filters to isolate problematic products
+- Apply operations in smaller batches
+
+### Performance Issues
+
+**Slow Operations**:
+- Large datasets taking longer than expected
+- System resource constraints
+- Network connectivity issues
+- Concurrent operations affecting performance
+
+**Optimization Strategies**:
+- Break large operations into smaller batches
+- Schedule during off-peak hours
+- Use more specific filters to reduce scope
+- Monitor Process Tracker for bottlenecks
+
+`[Screenshot showing troubleshooting interface with error details and solutions]`
+
+## Advanced Bulk Editing Techniques
+
+### Complex Find and Replace
+
+**Pattern Matching**:
+- Use specific search terms for precision
+- Combine case sensitivity with transformations
+- Apply to multiple fields simultaneously
+- Test patterns on small selections first
+
+**Multi-Step Operations**:
+- Plan sequence of bulk operations
+- Use intermediate status updates
+- Apply changes in logical order
+- Validate results between steps
+
+### Conditional Operations
+
+**Filter-Based Targeting**:
+- Use advanced filters to define scope
+- Combine multiple criteria for precision
+- Apply operations to specific product segments
+- Leverage category and attribute filters
+
+**Staged Rollouts**:
+- Test changes on small product groups
+- Gradually expand to larger selections
+- Monitor results and adjust approach
+- Use feedback to refine operations
+
+### Integration with Workflows
+
+**Process Integration**:
+- Coordinate with import/export operations
+- Align with content review workflows
+- Support approval and publishing processes
+- Integrate with inventory management
+
+**Automation Opportunities**:
+- Schedule regular bulk operations
+- Create templates for common changes
+- Establish standard operating procedures
+- Document successful operation patterns
+
+`[Screenshot showing advanced bulk editing configuration with complex filters and multi-step operations]`
+
+## Getting Help with Bulk Editing
+
+### Self-Service Resources
+
+**Documentation**:
+- Operation-specific guides and tutorials
+- Best practice recommendations
+- Troubleshooting knowledge base
+- Video tutorials and examples
+
+**Testing Environment**:
+- Practice with small product selections
+- Use test products for experimentation
+- Validate operations before large-scale use
+- Learn from trial and error safely
+
+### Support Options
+
+**Technical Assistance**:
+- Help with complex bulk operations
+- Troubleshooting failed operations
+- Performance optimization guidance
+- Custom operation development
+
+**Training and Guidance**:
+- Best practice workshops
+- Advanced technique training
+- Workflow optimization consulting
+- Team training and onboarding
+
+### Community Resources
+
+**User Community**:
+- Share bulk editing strategies
+- Learn from other users' experiences
+- Collaborate on complex operations
+- Exchange tips and techniques
+
+**Knowledge Sharing**:
+- Document successful operations
+- Create operation templates
+- Share troubleshooting solutions
+- Contribute to best practices
+
+<Info>
+Bulk editing is a powerful tool that can save significant time and ensure consistency across your product catalog. Start with small operations to build confidence, then scale up to larger, more complex bulk editing tasks.
+</Info>
+
+`[Screenshot showing a successful bulk editing operation with results summary and next steps]` 

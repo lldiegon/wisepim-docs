@@ -62,7 +62,6 @@
         "essentials/managing-projects",
         "essentials/prompt-lab",
         "essentials/prompt-library",
-        "essentials/knowledge-library",
         "essentials/integrations"
       ]
     },
@@ -76,7 +75,7 @@
       ]
     },
     {
-      "group": "Get Started",
+      "group": "Other information",
       "pages": [
         "integrations/supported-platforms",
         "essentials/agencies"

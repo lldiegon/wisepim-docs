@@ -1,0 +1,164 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "WISEPIM Documentation",
+  "colors": {
+    "primary": "#E71447",
+    "light": "#E71447",
+    "dark": "#E71447"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "favicon": "/favicon.png",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Essentials",
+            "pages": [
+              "essentials/managing-products",
+              "essentials/importing-products",
+              "essentials/bulk-editing",
+              "essentials/enriching-products",
+              "essentials/exporting-products",
+              "essentials/managing-projects",
+              "essentials/prompt-lab",
+              "essentials/prompt-library",
+              "essentials/integrations"
+            ]
+          },
+          {
+            "group": "Other features",
+            "pages": [
+              "other-features/knowledge-library",
+              "other-features/managing-attributes",
+              "other-features/managing-categories",
+              "other-features/process-tracker"
+            ]
+          },
+          {
+            "group": "Other information",
+            "pages": [
+              "essentials/agencies"
+            ]
+          },
+          {
+            "group": "API Reference",
+            "pages": [
+              {
+                "group": "Products",
+                "pages": [
+                  "api-reference/products/create",
+                  "api-reference/products/list",
+                  "api-reference/products/get",
+                  "api-reference/products/update",
+                  "api-reference/products/delete"
+                ]
+              },
+              {
+                "group": "Categories",
+                "pages": [
+                  "api-reference/categories/create"
+                ]
+              },
+              {
+                "group": "Attributes",
+                "pages": [
+                  "api-reference/attributes/create"
+                ]
+              },
+              {
+                "group": "Projects",
+                "pages": [
+                  "api-reference/projects/create"
+                ]
+              },
+              {
+                "group": "Prompts",
+                "pages": [
+                  "api-reference/prompts/create",
+                  "api-reference/prompts/versions"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "Other information",
+            "pages": [
+              "integrations/supported-platforms"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/magento",
+              "integrations/webshopimporter",
+              "integrations/woocommerce",
+              "integrations/shopify",
+              "integrations/lightspeed",
+              "integrations/cvv-shop"
+            ]
+          },
+          {
+            "group": "Suppliers",
+            "pages": [
+              "integrations/suppliers/Shots"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Homepage",
+          "href": "https://wisepim.com",
+          "icon": "house-chimney"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://wisepim.com/blog",
+          "icon": "newspaper"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/Swiftsync-ai-logo-transparant.png",
+    "dark": "/logo/Swiftsync-ai-logo-transparant.png"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:info@wisepim.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://wisepim.swiftsync.ai/products"
+    }
+  },
+  "footer": {
+    "socials": {
+      "youtube": "https://www.youtube.com/channel/UC5sQ48mV3sYEBme01xvVIXw",
+      "linkedin": "https://linkedin.com/company/wisepim"
+    }
+  }
+}

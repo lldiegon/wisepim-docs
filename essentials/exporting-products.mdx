@@ -1,0 +1,315 @@
+---
+title: 'Exporting Products'
+description: 'Learn how to export your products from WISEPIM to e-commerce platforms and file formats'
+---
+
+# Exporting Products
+
+Exporting products from WISEPIM allows you to send your enriched product data to e-commerce platforms, download files for other systems, or create backups of your catalog. This guide covers all export options and helps you get your products where they need to go.
+
+<Info>
+Before exporting to e-commerce platforms, you'll need to configure and test your integrations in the **Integrations** section. File exports (CSV, Excel) are always available without additional setup.
+</Info>
+
+## What You Can Export To
+
+WISEPIM supports exporting products to multiple destinations:
+
+- **E-commerce Platforms**: Shopify, WooCommerce, Magento, LightSpeed
+- **File Formats**: CSV and Excel files for download
+- **Other Systems**: WebshopImporter, Kaufland
+
+## Before You Start
+
+### Setting Up Platform Integrations
+
+For e-commerce platform exports, you must first configure your integrations:
+
+1. **Navigate to Integrations**: Go to the **Integrations** page from your main menu
+2. **Choose Your Platform**: Select the platform you want to connect to
+3. **Enter Credentials**: Provide your API keys, store URLs, or login credentials
+4. **Test Connection**: Use the test button to verify the connection works
+5. **Save Configuration**: Once tested successfully, save your integration settings
+
+<Warning>
+You cannot export to a platform until its integration is properly configured and tested. The export modal will only show platforms that have been successfully set up.
+</Warning>
+
+`[Screenshot of the Integrations page showing platform configuration options]`
+
+### Understanding Export Types
+
+**Platform Exports**: Send products directly to your connected e-commerce store
+- Updates existing products or creates new ones
+- Maintains product relationships and categories
+- Syncs all enriched content and custom attributes
+
+**File Exports**: Download product data as files
+- **CSV**: Universal format compatible with most systems
+- **Excel**: Formatted spreadsheet with multiple sheets if needed
+- Includes all product data and custom attributes
+
+## Selecting Products to Export
+
+### Export Options
+
+You have several options for choosing which products to export:
+
+**Selected Products**: Export only the products you've specifically chosen
+1. **Select Products**: Check the boxes next to products you want to export
+2. **Use Bulk Selection**: Select all products on current page or across all pages
+3. **Click Export**: The export will include only your selected products
+
+**All Products**: Export your entire catalog
+1. **Don't Select Any Products**: Leave all checkboxes unchecked
+2. **Click Export**: The system will export all products in your catalog
+
+**Filtered Products**: Export products matching your current filters
+1. **Apply Filters**: Use search and advanced filters to narrow down products
+2. **Select All Across Pages**: Choose to export all filtered results
+3. **Click Export**: Only products matching your filters will be exported
+
+`[Screenshot showing product selection options and the export button]`
+
+## Starting an Export
+
+### Accessing the Export Feature
+
+1. **Go to Products Page**: Navigate to your main Products page
+2. **Select Products** (optional): Choose specific products if desired
+3. **Click Export Button**: Find the orange **Export** button in the top toolbar
+4. **Check Available Destinations**: The modal will show configured integration targets
+
+`[Screenshot of the Products page with Export button highlighted]`
+
+### If No Integrations Are Configured
+
+If you see "No configured integrations found":
+
+1. **Click "Go to Integrations"**: This takes you directly to the setup page
+2. **Configure Your Platforms**: Set up at least one e-commerce integration
+3. **Return to Products**: Come back and try exporting again
+
+<Tip>
+Even without platform integrations, you can always export to CSV or Excel files.
+</Tip>
+
+## Platform Export Process
+
+### Selecting Your Destination
+
+1. **Choose Platform**: Select from your configured integrations:
+   - **Magento**: Export to your Magento store
+   - **WooCommerce**: Export to your WordPress/WooCommerce site
+   - **Shopify**: Export to your Shopify store
+   - **LightSpeed**: Export to your LightSpeed system
+   - **WebshopImporter**: Export to WebshopImporter system
+
+2. **Review Description**: Each option shows what will be exported
+3. **Click Start Export**: Begin the export process
+
+`[Screenshot of the export modal showing platform selection options]`
+
+### What Happens During Platform Export
+
+1. **Data Preparation**: WISEPIM prepares your product data for the target platform
+2. **Connection Established**: The system connects to your platform using saved credentials
+3. **Product Upload**: Products are sent to your platform with all their information
+4. **Processing**: The target platform processes and integrates the products
+5. **Completion**: You'll receive a notification when the export is finished
+
+<Info>
+Platform exports can take several minutes to hours depending on how many products you're exporting and the target platform's processing speed.
+</Info>
+
+## File Export Process
+
+### CSV Export
+
+CSV exports create a universal file format that works with most systems:
+
+1. **Select CSV**: Choose "CSV" from the export options
+2. **Processing**: WISEPIM generates the CSV file with all product data
+3. **Download**: The file automatically downloads to your computer
+4. **Use File**: Import the CSV into other systems or use for backup
+
+**CSV Export Features**:
+- All product fields included
+- Custom attributes exported
+- UTF-8 encoding for international characters
+- Standard formatting for easy import elsewhere
+
+### Excel Export
+
+Excel exports create formatted spreadsheet files:
+
+1. **Select Excel**: Choose "Excel" from the export options
+2. **Processing**: WISEPIM generates the Excel file with formatted data
+3. **Download**: The .xlsx file automatically downloads to your computer
+4. **Use File**: Open in Excel, Google Sheets, or other spreadsheet applications
+
+**Excel Export Features**:
+- Formatted columns with proper data types
+- Multiple sheets for complex data (if applicable)
+- All custom attributes included
+- Ready for analysis or further processing
+
+`[Screenshot of the file export options in the modal]`
+
+## Managing Export Progress
+
+### Tracking Your Export
+
+1. **Progress Notifications**: Toast messages show export status
+2. **Background Processing**: Exports continue even if you navigate away
+3. **Completion Alerts**: You'll be notified when the export finishes
+4. **Download Handling**: File exports trigger automatic downloads
+
+### What to Expect
+
+**Small Catalogs** (under 100 products): Usually complete within minutes
+**Medium Catalogs** (100-1,000 products): May take 10-30 minutes
+**Large Catalogs** (1,000+ products): Can take several hours
+
+**File Downloads**: CSV and Excel exports typically complete quickly and download immediately
+
+<Tip>
+For large exports to e-commerce platforms, consider exporting in smaller batches to avoid timeouts and make troubleshooting easier.
+</Tip>
+
+## After Export Completion
+
+### Verifying Platform Exports
+
+1. **Check Target Platform**: Log into your e-commerce platform to verify products appeared
+2. **Review Product Data**: Spot-check a few products to ensure data transferred correctly
+3. **Test Functionality**: Make sure products display properly on your storefront
+4. **Verify Categories**: Ensure product categories and relationships are intact
+
+### Using File Exports
+
+**CSV Files**:
+- Import into other e-commerce platforms
+- Use with inventory management systems
+- Create backups of your product data
+- Analyze data in spreadsheet applications
+
+**Excel Files**:
+- Share with team members for review
+- Perform data analysis and reporting
+- Create product catalogs for print or presentation
+- Use as templates for future imports
+
+## Troubleshooting Export Issues
+
+### "Export Failed" Messages
+
+**Check Integration Status**:
+- Verify your platform integration is still connected
+- Test the connection in the Integrations page
+- Re-enter credentials if needed
+
+**Platform-Specific Issues**:
+- **Shopify**: Check API permissions and rate limits
+- **WooCommerce**: Verify REST API is enabled and has write permissions
+- **Magento**: Confirm API user has product creation/update permissions
+
+### "No Products Selected" Warning
+
+- **Select Products**: Choose specific products using checkboxes
+- **Or Export All**: Leave nothing selected to export everything
+- **Check Filters**: Make sure your filters aren't hiding all products
+
+### File Download Problems
+
+**Download Doesn't Start**:
+- Check your browser's download settings
+- Disable popup blockers for WISEPIM
+- Try a different browser
+
+**File Won't Open**:
+- Ensure you have appropriate software (Excel for .xlsx files)
+- Try opening CSV files in a text editor first
+- Check file isn't corrupted by re-exporting
+
+### Performance Issues
+
+**Slow Exports**:
+- Large catalogs naturally take longer
+- Platform API rate limits may slow the process
+- Network connectivity can affect speed
+
+**Timeouts**:
+- Try exporting smaller batches
+- Check your internet connection
+- Contact support for very large catalogs
+
+## Best Practices
+
+### Before Exporting
+
+1. **Test Your Integration**: Always test platform connections first
+2. **Start Small**: Export a few products initially to verify everything works
+3. **Review Product Data**: Ensure your products are ready for export
+4. **Plan Your Timing**: Large exports during off-peak hours work better
+
+### Choosing What to Export
+
+1. **Use Filters**: Export only products that need updating
+2. **Select Strategically**: Choose products by category, status, or recent changes
+3. **Consider Timing**: Export new products separately from updates
+
+### After Export
+
+1. **Verify Results**: Always check that the export worked correctly
+2. **Monitor Performance**: Watch how exported products perform on your platform
+3. **Keep Records**: Save export files as backups
+4. **Schedule Regular Exports**: Set up routine exports to keep platforms in sync
+
+## Advanced Export Scenarios
+
+### Partial Updates
+
+**Exporting Only Changed Products**:
+1. Use filters to find recently modified products
+2. Filter by "Last Updated" timestamp
+3. Export only products that have changed since your last export
+
+**Category-Specific Exports**:
+1. Filter products by specific categories
+2. Export category by category for better organization
+3. Useful for seasonal or promotional product updates
+
+### Backup and Recovery
+
+**Creating Regular Backups**:
+1. Export all products to Excel monthly
+2. Save files with date stamps
+3. Store backups in multiple locations
+
+**Preparing for Migration**:
+1. Export to CSV for maximum compatibility
+2. Include all custom attributes
+3. Test import process on target system first
+
+## Getting Help
+
+### If You Need Assistance
+
+- **Integration Issues**: Check the Integrations page documentation
+- **File Format Problems**: Review file export specifications
+- **Platform Errors**: Contact support with specific error messages
+- **Performance Questions**: Reach out for guidance on large exports
+
+### Useful Resources
+
+- **Platform Documentation**: Specific guides for each e-commerce platform
+- **File Format Guides**: Details on CSV and Excel export formats
+- **API Documentation**: Technical details for custom integrations
+- **Video Tutorials**: Step-by-step visual guides
+
+<Info>
+Exporting is how you get your enriched product data out to the world. Regular exports ensure your e-commerce platforms stay updated with your latest product improvements and AI enhancements.
+</Info>
+
+`[Screenshot showing successful export completion with download confirmation]` 

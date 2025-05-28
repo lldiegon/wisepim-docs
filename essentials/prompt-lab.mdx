@@ -1,0 +1,465 @@
+---
+title: 'Prompt Lab'
+description: 'Test and refine your AI prompts in real-time to optimize product content generation'
+---
+
+# Prompt Lab
+
+The Prompt Lab is your experimentation workspace for creating and testing AI prompts before using them in bulk operations. Here you can fine-tune your prompts, test different settings, and see exactly how your content will look before applying changes to your entire product catalog.
+
+<Info>
+This powerful tool lets you experiment with different prompt configurations to achieve the perfect content generation results for your brand.
+</Info>
+
+## What the Prompt Lab Does
+
+The Prompt Lab allows you to:
+
+- **Test Prompts in Real-Time**: See immediate results from your prompt configurations
+- **Compare Before and After**: View original product data alongside AI-enhanced versions
+- **Fine-Tune Settings**: Adjust tone, industry, purpose, and other parameters
+- **Save Successful Prompts**: Store working prompts in your library for future use
+- **Load Existing Prompts**: Test and modify prompts from your prompt library
+- **Experiment Safely**: Test changes without affecting your live product data
+
+## Understanding the Interface
+
+### Three-Panel Layout
+
+**Original Product (Left Panel)**:
+- Shows the current product information
+- Displays the product name and existing description
+- Provides the baseline for comparison
+
+**AI Enhanced Product (Right Panel)**:
+- Shows the AI-generated content
+- Updates in real-time when you test prompts
+- Displays loading state during generation
+
+**Prompt Configuration (Bottom Panel)**:
+- Contains all the settings and controls
+- Where you write and modify your prompts
+- Includes industry, tone, and purpose settings
+
+`[Screenshot of the three-panel Prompt Lab interface]`
+
+## Getting Started
+
+### Loading a Product
+
+1. **Enter a SKU**: Type a product SKU in the search field at the top right
+2. **Click Load Product**: Press the "Load Product" button to fetch the product data
+3. **Review Product Info**: Check that the correct product appears in the left panel
+4. **Ready to Test**: Once loaded, you can start testing prompts
+
+**Tips for Product Selection**:
+- Choose products with existing descriptions for better comparison
+- Use products representative of your catalog
+- Test with different product types to ensure prompt versatility
+
+### Basic Prompt Testing
+
+1. **Review Default Prompt**: The system provides a starter prompt template
+2. **Customize Settings**: Adjust industry, tone, and purpose as needed
+3. **Click Test Prompt**: Press the "Test Prompt" button to generate content
+4. **Review Results**: Compare the original and AI-enhanced versions
+5. **Iterate and Improve**: Modify settings and test again
+
+`[Screenshot showing the basic testing workflow]`
+
+## Prompt Configuration Options
+
+### What to Enrich
+
+**Description**: Generate or improve product descriptions
+- Best for: Creating compelling marketing copy
+- Use when: Products need better descriptions or you want to enhance existing ones
+
+**Title**: Enhance or create product titles
+- Best for: Improving product names for SEO and appeal
+- Use when: Product titles are generic or need optimization
+
+**Attributes**: Extract or enhance product attributes
+- Best for: Standardizing product specifications
+- Use when: You need consistent attribute formatting
+
+### Industry Settings
+
+**Purpose**: Helps AI understand your market context and use appropriate terminology
+
+**Available Industries**:
+- **All Industries**: Generic approach suitable for any market
+- **Fashion & Apparel**: Clothing, accessories, style-focused content
+- **Electronics**: Tech products, gadgets, specifications-heavy items
+- **Home & Garden**: Furniture, decor, outdoor products
+- **Health & Beauty**: Cosmetics, wellness, personal care
+- **Sports & Outdoors**: Athletic gear, outdoor equipment
+- **Automotive**: Car parts, accessories, maintenance products
+- **And more**: Additional specialized industries
+
+**Why Industry Matters**:
+- Uses industry-specific terminology
+- Focuses on relevant features and benefits
+- Applies appropriate technical language
+- Addresses industry-specific customer concerns
+
+### Purpose Configuration
+
+**Standard**: Balanced approach for general product descriptions
+- Good for: Most product types
+- Creates: Well-rounded, informative content
+
+**SEO Optimized**: Focus on search engine optimization
+- Good for: E-commerce listings, online catalogs
+- Creates: Keyword-rich, search-friendly content
+
+**Marketing Copy**: Persuasive, sales-focused content
+- Good for: Product pages, promotional materials
+- Creates: Compelling, conversion-oriented descriptions
+
+**Technical Specifications**: Detailed, feature-focused content
+- Good for: B2B products, complex items
+- Creates: Specification-heavy, detailed descriptions
+
+### Tone of Voice Options
+
+**Professional**: Formal, business-appropriate language
+- Best for: B2B products, professional services
+- Tone: Authoritative, credible, straightforward
+
+**Friendly**: Approachable, conversational style
+- Best for: Consumer products, lifestyle brands
+- Tone: Warm, accessible, relatable
+
+**Enthusiastic**: Energetic, exciting language
+- Best for: Sports, entertainment, youth-oriented products
+- Tone: Dynamic, passionate, engaging
+
+**Luxury**: Premium, sophisticated language
+- Best for: High-end products, luxury brands
+- Tone: Elegant, exclusive, refined
+
+**Technical**: Precise, specification-focused
+- Best for: Technical products, professional tools
+- Tone: Accurate, detailed, informative
+
+### Point of View Settings
+
+**Second Person (You)**: Direct address to the customer
+- Example: "You'll love this product's versatility"
+- Best for: Engaging, personal connection
+
+**Third Person**: Objective, descriptive approach
+- Example: "This product offers exceptional versatility"
+- Best for: Professional, neutral tone
+
+### Advanced Options
+
+**Include Specification Table**: Adds structured technical details
+- Use when: Products have important technical specifications
+- Creates: Organized, easy-to-scan technical information
+- Best for: Electronics, appliances, technical products
+
+`[Screenshot of the configuration panel with all options visible]`
+
+## Writing Effective Prompts
+
+### Prompt Structure
+
+**Good Prompt Elements**:
+- Clear instructions for the AI
+- Specific formatting requirements
+- Context about your brand or products
+- Examples of desired output style
+- Variable placeholders ({{title}}, {{description}})
+
+### Using Variables
+
+**Available Variables**:
+- `{{title}}`: Product name/title
+- `{{description}}`: Current product description
+- `{{sku}}`: Product SKU
+- `{{category}}`: Product category
+- `{{attributes}}`: Product attributes
+
+**Example Usage**:
+```
+Create a compelling description for {{title}}.
+
+Current description: {{description}}
+
+Focus on benefits and include a call to action.
+```
+
+### Prompt Best Practices
+
+**Be Specific**:
+- Define exactly what you want the AI to create
+- Specify length, format, and style requirements
+- Include examples when possible
+
+**Use Clear Structure**:
+- Break instructions into numbered steps
+- Use bullet points for multiple requirements
+- Separate different sections clearly
+
+**Include Context**:
+- Mention your brand voice or style
+- Reference your target audience
+- Include industry-specific requirements
+
+**Test and Iterate**:
+- Start with simple prompts and add complexity
+- Test with different product types
+- Refine based on results
+
+`[Screenshot showing a well-structured prompt example]`
+
+## Testing and Refinement
+
+### Effective Testing Strategy
+
+1. **Start Simple**: Begin with basic prompts and settings
+2. **Test One Change**: Modify one element at a time
+3. **Compare Results**: Always review before and after content
+4. **Document Success**: Note what works for different product types
+5. **Build Complexity**: Gradually add more sophisticated requirements
+
+### What to Look For
+
+**Content Quality**:
+- Accuracy of product information
+- Appropriate tone and style
+- Engaging and compelling language
+- Proper grammar and formatting
+
+**Brand Alignment**:
+- Consistent with your brand voice
+- Uses appropriate terminology
+- Matches your communication style
+- Addresses your target audience
+
+**Technical Accuracy**:
+- Correct product specifications
+- Appropriate industry terminology
+- Accurate feature descriptions
+- Proper technical language
+
+### Common Issues and Solutions
+
+**Generic Content**:
+- Add more specific instructions to your prompt
+- Include brand voice guidelines
+- Specify unique selling points to highlight
+
+**Wrong Tone**:
+- Adjust the tone of voice setting
+- Modify prompt language to be more specific
+- Include tone examples in your prompt
+
+**Missing Information**:
+- Ensure product data is complete
+- Add specific requirements to your prompt
+- Include variable placeholders for key data
+
+**Too Long/Short**:
+- Specify desired length in your prompt
+- Use word count or paragraph requirements
+- Test with different length specifications
+
+`[Screenshot showing before/after comparison with improvements]`
+
+## Managing Your Prompts
+
+### Saving Successful Prompts
+
+1. **Test Thoroughly**: Ensure your prompt works well across different products
+2. **Click "Explore Prompt Library"**: Access the save functionality
+3. **Provide Details**: Add a name, description, and tags
+4. **Set Categories**: Specify industry, purpose, and other metadata
+5. **Save for Reuse**: Store in your prompt library for future use
+
+### Loading Existing Prompts
+
+1. **Click "Load from Library"**: Access your saved prompts
+2. **Browse Available Prompts**: See all prompts in your library
+3. **Select a Prompt**: Choose the one you want to test or modify
+4. **Automatic Loading**: All settings and prompt text load automatically
+5. **Test and Modify**: Make adjustments as needed
+
+### Organizing Your Prompt Library
+
+**Naming Conventions**:
+- Use descriptive names (e.g., "Electronics SEO Description")
+- Include purpose and industry in the name
+- Add version numbers for iterations
+
+**Categorization**:
+- Group by product type or industry
+- Separate by purpose (SEO, marketing, technical)
+- Tag with relevant keywords
+
+**Documentation**:
+- Add detailed descriptions
+- Note which products work best
+- Include performance metrics or feedback
+
+`[Screenshot of the prompt library interface]`
+
+## Advanced Prompt Lab Techniques
+
+### A/B Testing Prompts
+
+**Systematic Comparison**:
+- Test two different approaches with the same product
+- Compare results for effectiveness
+- Document which performs better
+- Use insights to improve future prompts
+
+**Variables to Test**:
+- Different tone of voice settings
+- Various prompt structures
+- Alternative industry settings
+- Different length requirements
+
+### Prompt Optimization
+
+**Iterative Improvement**:
+- Start with a working prompt
+- Make small, incremental changes
+- Test each modification
+- Keep successful changes, revert unsuccessful ones
+
+**Performance Metrics**:
+- Content quality and accuracy
+- Brand voice consistency
+- Customer engagement (if available)
+- Conversion rate improvements
+
+### Multi-Product Testing
+
+**Diverse Product Testing**:
+- Test prompts across different product categories
+- Ensure consistency across your catalog
+- Identify products that need special handling
+- Develop category-specific variations
+
+**Batch Testing Strategy**:
+- Select representative products from each category
+- Test the same prompt across all selections
+- Note which products work well and which need adjustments
+- Create category-specific prompt variations
+
+## Integration with Bulk Operations
+
+### From Lab to Production
+
+**Validation Process**:
+1. Test thoroughly in Prompt Lab
+2. Verify results across multiple product types
+3. Save successful prompts to your library
+4. Use saved prompts in bulk enrichment operations
+
+**Quality Assurance**:
+- Test with edge cases (products with minimal data)
+- Verify technical accuracy
+- Check brand voice consistency
+- Ensure appropriate length and format
+
+### Scaling Your Success
+
+**Prompt Templates**:
+- Create templates for different product categories
+- Develop industry-specific variations
+- Build purpose-specific prompts (SEO, marketing, technical)
+- Maintain a library of proven prompts
+
+**Continuous Improvement**:
+- Regularly test and update prompts
+- Incorporate feedback from bulk operations
+- Refine based on performance metrics
+- Stay updated with new AI capabilities
+
+## Troubleshooting Common Issues
+
+### "No Product Found with SKU"
+
+**Solutions**:
+- Verify the SKU is correct and exists in your catalog
+- Check for typos or extra spaces
+- Ensure the product is in your current project
+- Try a different SKU to test the system
+
+### "Generated Content is Too Generic"
+
+**Solutions**:
+- Add more specific instructions to your prompt
+- Include brand voice guidelines
+- Specify unique selling points to highlight
+- Adjust industry and purpose settings
+
+### "Content Doesn't Match Brand Voice"
+
+**Solutions**:
+- Complete your Knowledge Library for better brand context
+- Include specific tone examples in your prompt
+- Adjust the tone of voice setting
+- Add brand-specific terminology to your prompt
+
+### "Prompt Test Takes Too Long"
+
+**Normal Behavior**:
+- AI generation can take 30-60 seconds
+- Complex prompts may take longer
+- First-time generation might be slower
+
+**When to Be Concerned**:
+- No response after 2-3 minutes
+- Repeated timeouts
+- System appears unresponsive
+
+## Best Practices for Success
+
+### Prompt Development Workflow
+
+1. **Start with Templates**: Use provided examples as starting points
+2. **Test Incrementally**: Make small changes and test frequently
+3. **Document Everything**: Keep notes on what works and what doesn't
+4. **Build a Library**: Save successful prompts for reuse
+5. **Share Knowledge**: Collaborate with team members on effective prompts
+
+### Quality Control
+
+**Regular Review**:
+- Test prompts periodically with new products
+- Update prompts when brand guidelines change
+- Refine based on customer feedback
+- Monitor performance metrics
+
+**Team Collaboration**:
+- Share successful prompts with team members
+- Get feedback from marketing and product teams
+- Incorporate insights from customer-facing teams
+- Maintain consistency across all users
+
+## Getting Help
+
+### If You Need Assistance
+
+- **Prompt Writing**: Consult with marketing team for brand voice guidance
+- **Technical Issues**: Contact support for system-related problems
+- **Best Practices**: Review documentation and examples
+- **Advanced Techniques**: Reach out to your account manager
+
+### Useful Resources
+
+- **Prompt Templates**: Pre-built prompts for common use cases
+- **Brand Guidelines**: Reference your brand voice documentation
+- **Knowledge Library**: Complete your knowledge base for better results
+- **Video Tutorials**: Visual guides for prompt development
+
+<Info>
+The Prompt Lab is your sandbox for perfecting AI content generation. Take time to experiment and find what works best for your specific products and brand voice.
+</Info>
+
+`[Screenshot showing a successful prompt test with high-quality generated content]` 

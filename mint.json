@@ -18,7 +18,7 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:contact@swiftsync.ai"
+      "url": "mailto:info@wisepim.com"
     }
   ],
   "topbarCtaButton": {
@@ -38,11 +38,6 @@
       "url": "https://wisepim.com"
     },
     {
-      "name": "Custom Development",
-      "icon": "code",
-      "url": "https://swiftsync.ai"
-    },
-    {
       "name": "Blog",
       "icon": "newspaper",
       "url": "https://wisepim.com/blog"
@@ -59,30 +54,32 @@
     {
       "group": "Essentials",
       "pages": [
-        "essentials/import-products",
+        "essentials/managing-products",
+        "essentials/importing-products",
         "essentials/bulk-editing",
-        "essentials/enrich-products",
-        "essentials/export-products",
-        "essentials/agencies"
+        "essentials/enriching-products",
+        "essentials/exporting-products",
+        "essentials/managing-projects",
+        "essentials/prompt-lab",
+        "essentials/prompt-library",
+        "essentials/knowledge-library",
+        "essentials/integrations"
       ]
     },
     {
-      "group": "Default pages",
+      "group": "Other features",
       "pages": [
-        "default-pages/markdown",
-        "default-pages/code",
-        "default-pages/images",
-        "default-pages/settings",
-        "default-pages/navigation",
-        "default-pages/reusable-snippets",
-        "default-pages/development"
+        "other-features/knowledge-library",
+        "other-features/managing-attributes",
+        "other-features/managing-categories",
+        "other-features/process-tracker"
       ]
     },
     {
       "group": "Get Started",
       "pages": [
         "integrations/supported-platforms",
-        "integrations/openai"
+        "essentials/agencies"
       ]
     },
     {
@@ -145,6 +142,6 @@
   ],
   "footerSocials": {
     "youtube": "https://www.youtube.com/channel/UC5sQ48mV3sYEBme01xvVIXw",
-    "linkedin": "https://www.linkedin.com/company/swiftsyncai/"
+    "linkedin": "https://linkedin.com/company/wisepim"
   }
 }

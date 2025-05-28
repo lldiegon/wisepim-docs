@@ -1,0 +1,252 @@
+---
+title: 'Importing Products'
+description: 'Learn how to bring products into WISEPIM from various e-commerce platforms and file formats'
+---
+
+# Importing Products
+
+Importing products into WISEPIM allows you to quickly populate your catalog from existing e-commerce platforms or upload data from spreadsheets. This guide will walk you through all available import options and help you get your products into the system efficiently.
+
+<Info>
+Before importing from e-commerce platforms, you'll need to configure and test your integrations in the **Integrations** section. CSV imports are always available without additional setup.
+</Info>
+
+## What You Can Import From
+
+WISEPIM supports importing products from multiple sources:
+
+- **E-commerce Platforms**: Shopify, WooCommerce, Magento, LightSpeed
+- **File Formats**: CSV files with advanced mapping
+- **Other Systems**: WebshopImporter, Kaufland
+
+## Before You Start
+
+### Setting Up Platform Integrations
+
+For e-commerce platform imports, you must first configure your integrations:
+
+1. **Navigate to Integrations**: Go to the **Integrations** page from your main menu
+2. **Choose Your Platform**: Select the platform you want to connect (Shopify, WooCommerce, etc.)
+3. **Enter Credentials**: Provide your API keys, store URLs, or login credentials
+4. **Test Connection**: Use the test button to verify the connection works
+5. **Save Configuration**: Once tested successfully, save your integration settings
+
+<Warning>
+You cannot import from a platform until its integration is properly configured and tested. The import modal will only show platforms that have been successfully set up.
+</Warning>
+
+`[Screenshot of the Integrations page showing platform configuration options]`
+
+### Understanding Import Types
+
+**Platform Imports**: Pull all products directly from your connected e-commerce store
+- Maintains product relationships and categories
+- Imports all standard product fields
+- Preserves existing product IDs when possible
+
+**CSV Imports**: Upload product data from spreadsheet files
+- Flexible field mapping to match your data structure
+- Advanced validation and error checking
+- Support for custom attributes and fields
+
+## Starting an Import
+
+### Accessing the Import Feature
+
+1. **Go to Products Page**: Navigate to your main Products page
+2. **Click Import Button**: Find the orange **Import** button in the top toolbar
+3. **Check Available Sources**: The modal will show only configured integration sources
+
+`[Screenshot of the Products page with Import button highlighted]`
+
+### If No Integrations Are Configured
+
+If you see "No configured integrations found":
+
+1. **Click "Go to Integrations"**: This takes you directly to the setup page
+2. **Configure Your Platforms**: Set up at least one e-commerce integration
+3. **Return to Products**: Come back and try importing again
+
+`[Screenshot of the "no integrations" message with the setup button]`
+
+## Platform Import Process
+
+### Selecting Your Source
+
+1. **Choose Platform**: Select from your configured integrations:
+   - **Magento**: Import from your Magento store
+   - **WooCommerce**: Import from your WordPress/WooCommerce site
+   - **Shopify**: Import from your Shopify store
+   - **LightSpeed**: Import from your LightSpeed system
+   - **WebshopImporter**: Import from WebshopImporter system
+
+2. **Review Description**: Each option shows what will be imported
+3. **Click Continue**: Proceed with the selected platform
+
+`[Screenshot of the import modal showing platform selection options]`
+
+### What Happens During Platform Import
+
+1. **Connection Established**: WISEPIM connects to your platform using saved credentials
+2. **Product Discovery**: The system finds all products in your store
+3. **Data Transfer**: Products are downloaded with all their information
+4. **Processing**: Products are processed and added to your WISEPIM catalog
+5. **Completion**: You'll receive a notification when the import is finished
+
+<Info>
+Platform imports can take several minutes to hours depending on how many products you have. You can continue working in WISEPIM while the import runs in the background.
+</Info>
+
+## CSV Import Process
+
+### Preparing Your CSV File
+
+Before uploading, ensure your CSV file:
+
+- **Has headers**: First row should contain column names
+- **Uses UTF-8 encoding**: Prevents character display issues
+- **Contains required fields**: At minimum, product names and SKUs
+- **Follows consistent formatting**: Dates, prices, and categories in standard formats
+
+### Upload and Mapping
+
+1. **Select CSV Import**: Choose "CSV Import" from the import options
+2. **Upload File**: You'll be redirected to the CSV importer page
+3. **Map Columns**: Match your CSV columns to WISEPIM fields
+4. **Validate Data**: Review any errors or warnings
+5. **Start Import**: Begin the import process
+
+`[Screenshot of the CSV mapping interface]`
+
+### Advanced CSV Features
+
+The CSV importer includes powerful features:
+
+- **Auto-mapping**: Automatically suggests field mappings based on column names
+- **Data validation**: Checks for errors before importing
+- **Custom attributes**: Map to project-specific fields
+- **Preview mode**: See how your data will look before importing
+- **Error handling**: Clear reporting of any issues found
+
+## Managing Import Progress
+
+### Tracking Your Import
+
+1. **Progress Notifications**: Toast messages show import status
+2. **Background Processing**: Imports continue even if you navigate away
+3. **Completion Alerts**: You'll be notified when the import finishes
+4. **Error Reports**: Any issues are clearly reported
+
+### What to Expect
+
+**Small Catalogs** (under 100 products): Usually complete within minutes
+**Medium Catalogs** (100-1,000 products): May take 10-30 minutes
+**Large Catalogs** (1,000+ products): Can take several hours
+
+<Tip>
+Start with a small test import first to verify your integration is working correctly before importing your entire catalog.
+</Tip>
+
+## After Import Completion
+
+### Reviewing Imported Products
+
+1. **Check Product Count**: Verify the expected number of products were imported
+2. **Review Product Data**: Spot-check a few products to ensure data quality
+3. **Verify Categories**: Make sure product categories imported correctly
+4. **Test Custom Fields**: If you have custom attributes, verify they populated
+
+### Common Post-Import Tasks
+
+1. **Set Review Status**: Mark products as reviewed after verification
+2. **Enrich Descriptions**: Use AI to improve product descriptions
+3. **Update Categories**: Organize products into your preferred category structure
+4. **Configure Attributes**: Set up any additional custom fields needed
+
+## Troubleshooting Import Issues
+
+### "Import Failed" Messages
+
+**Check Integration Status**:
+- Verify your platform integration is still connected
+- Test the connection in the Integrations page
+- Re-enter credentials if needed
+
+**Platform-Specific Issues**:
+- **Shopify**: Check API permissions and rate limits
+- **WooCommerce**: Verify REST API is enabled
+- **Magento**: Confirm API user has proper permissions
+
+### "No Products Found"
+
+- **Empty Store**: Verify your platform actually has products
+- **Permission Issues**: Check if your API user can access products
+- **Filter Settings**: Some platforms may have visibility filters
+
+### CSV Import Problems
+
+**File Format Issues**:
+- Save as CSV (UTF-8) format
+- Remove any special characters in headers
+- Ensure consistent data formatting
+
+**Mapping Errors**:
+- Required fields must be mapped
+- Check data types match field requirements
+- Verify custom attribute codes are correct
+
+### Performance Issues
+
+**Slow Imports**:
+- Large catalogs naturally take longer
+- Platform API rate limits may slow the process
+- Network connectivity can affect speed
+
+**Timeouts**:
+- Try importing smaller batches
+- Check your internet connection
+- Contact support for very large catalogs
+
+## Best Practices
+
+### Before Importing
+
+1. **Test Your Integration**: Always test platform connections first
+2. **Start Small**: Import a few products initially to verify everything works
+3. **Backup Existing Data**: Export current products before major imports
+4. **Plan Your Structure**: Decide on categories and attributes beforehand
+
+### During Import
+
+1. **Monitor Progress**: Keep an eye on notifications and progress messages
+2. **Don't Interrupt**: Avoid closing your browser during active imports
+3. **Be Patient**: Large imports take time - let them complete
+
+### After Import
+
+1. **Quality Check**: Review imported data for accuracy
+2. **Organize Products**: Set up proper categories and attributes
+3. **Enrich Content**: Use AI tools to improve product descriptions
+4. **Regular Updates**: Set up regular import schedules if needed
+
+## Getting Help
+
+### If You Need Assistance
+
+- **Integration Issues**: Check the Integrations page documentation
+- **CSV Problems**: Review the CSV Import guide
+- **Technical Errors**: Contact support with error messages
+- **Performance Questions**: Reach out for guidance on large imports
+
+### Useful Resources
+
+- **Integrations Documentation**: Detailed setup guides for each platform
+- **CSV Template**: Download sample CSV files for reference
+- **API Documentation**: Technical details for custom integrations
+- **Video Tutorials**: Step-by-step visual guides
+
+<Info>
+Remember that importing is just the first step. Once your products are in WISEPIM, you can enhance them with AI enrichment, organize them with custom attributes, and export them to other platforms.
+</Info>
+
+`[Screenshot showing successful import completion with product count and next steps]` 

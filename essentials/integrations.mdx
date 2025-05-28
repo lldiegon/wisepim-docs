@@ -1,0 +1,534 @@
+---
+title: 'App Marketplace & Integrations'
+description: 'Connect your project to various e-commerce platforms and import/export your product data seamlessly'
+---
+
+# App Marketplace & Integrations
+
+The App Marketplace is your gateway to connecting WISEPIM with various e-commerce platforms, marketplaces, and external systems. These integrations enable seamless data synchronization, allowing you to import products from existing stores and export enriched product data to multiple sales channels.
+
+<Info>
+Integrations are the bridge between WISEPIM and your existing e-commerce ecosystem. They eliminate manual data entry and ensure your product information stays synchronized across all platforms.
+</Info>
+
+## What Integrations Do
+
+Integrations help you:
+
+- **Import Products**: Bring existing product data from e-commerce platforms
+- **Export Enriched Data**: Send improved product information back to platforms
+- **Synchronize Inventory**: Keep product data consistent across channels
+- **Automate Workflows**: Reduce manual data entry and updates
+- **Scale Operations**: Manage multiple sales channels from one central hub
+- **Maintain Consistency**: Ensure brand and product information alignment
+
+## Available Integrations
+
+### E-commerce Platforms
+
+**Shopify**
+- Import products, variants, and collections
+- Export enriched product data and descriptions
+- Sync inventory levels and pricing
+- Support for multiple stores and markets
+
+**WooCommerce**
+- Connect to WordPress-based stores
+- Import product catalogs and attributes
+- Export optimized product content
+- Handle variable products and categories
+
+**Magento 2**
+- Enterprise-grade e-commerce integration
+- Complex product catalog support
+- Multi-store and multi-language capabilities
+- Advanced attribute mapping options
+
+### Marketplace Platforms
+
+**Kaufland.de**
+- German marketplace integration
+- Product listing and management
+- Compliance with marketplace requirements
+- Automated product feed generation
+
+**Lightspeed**
+- Retail POS system integration
+- Product and inventory synchronization
+- Multi-location support
+- Real-time data updates
+
+### Data Import/Export Tools
+
+**Webshopimporter**
+- Generic data import capabilities
+- Custom API connections
+- Flexible data mapping options
+- Batch processing support
+
+**WordPress**
+- Content management system integration
+- Blog and content synchronization
+- SEO-optimized product pages
+- Custom post type support
+
+`[Screenshot showing the App Marketplace with available integrations]`
+
+## Setting Up Integrations
+
+### Initial Configuration
+
+1. **Navigate to App Marketplace**: Access integrations from the main navigation
+2. **Select Integration**: Choose the platform you want to connect
+3. **Configure Connection**: Enter required credentials and settings
+4. **Test Connection**: Verify the integration is working properly
+5. **Map Attributes**: Configure how data fields correspond between systems
+
+### Connection Requirements
+
+**API Credentials**:
+- Most integrations require API keys or tokens
+- Some platforms need username/password combinations
+- Store URLs and specific endpoints may be required
+- Access permissions must be properly configured
+
+**Platform-Specific Setup**:
+- **Shopify**: Private app credentials or API access tokens
+- **WooCommerce**: Consumer key and consumer secret
+- **Magento 2**: Admin user credentials and store view codes
+- **Kaufland**: API key and secret from seller portal
+
+### Configuration Process
+
+**Basic Settings**:
+- **Integration Name**: Identify the connection for your reference
+- **Platform URL**: The base URL of your store or platform
+- **Credentials**: API keys, tokens, or login information
+- **Sync Settings**: How often to synchronize data
+
+**Advanced Options**:
+- **Store Views**: For multi-store platforms like Magento
+- **Product Filters**: Limit which products to import/export
+- **Category Mappings**: How categories correspond between systems
+- **Custom Fields**: Map platform-specific attributes
+
+`[Screenshot of integration configuration modal with form fields]`
+
+## Managing Integration Connections
+
+### Connection Status
+
+**Status Indicators**:
+- **Connected**: Green indicator showing active, working connection
+- **Error**: Red indicator showing connection or authentication issues
+- **Idle**: Gray indicator for configured but unused connections
+- **Testing**: Yellow indicator during connection verification
+
+**Connection Health**:
+- Last successful test timestamp
+- Error messages and troubleshooting information
+- Product count and sync statistics
+- Performance metrics and sync duration
+
+### Testing Connections
+
+**Automatic Testing**:
+- Connections are tested when first configured
+- Regular health checks verify ongoing connectivity
+- Error notifications alert you to connection issues
+- Automatic retry mechanisms for temporary failures
+
+**Manual Testing**:
+- Test connection button for on-demand verification
+- Detailed error reporting for troubleshooting
+- Connection diagnostics and system status
+- Performance testing and optimization suggestions
+
+### Updating Credentials
+
+**When to Update**:
+- API keys expire or are rotated
+- Store URLs change or are migrated
+- Access permissions are modified
+- Platform upgrades require new authentication
+
+**Update Process**:
+- Edit existing integration configuration
+- Update credentials without losing mappings
+- Re-test connection after changes
+- Verify data sync continues working properly
+
+`[Screenshot showing integration status dashboard with health indicators]`
+
+## Attribute Mapping
+
+### Understanding Attribute Mapping
+
+**Purpose**: Attribute mapping defines how data fields from external platforms correspond to your WISEPIM product attributes. This ensures data imports correctly and exports maintain proper formatting.
+
+**Mapping Types**:
+- **Direct Mapping**: One-to-one field correspondence
+- **Transformation Mapping**: Data conversion during transfer
+- **Conditional Mapping**: Rules-based field assignment
+- **Custom Mapping**: Platform-specific field handling
+
+### Setting Up Mappings
+
+**Access Mapping Interface**:
+1. Configure your integration connection first
+2. Click "Map Attributes" for the specific integration
+3. Review source fields from the external platform
+4. Map to corresponding WISEPIM attributes
+5. Save mapping configuration for future syncs
+
+**Mapping Process**:
+- **Source Attributes**: Fields available from the external platform
+- **Target Attributes**: Your WISEPIM product attributes
+- **Mapping Rules**: How data should be transformed or combined
+- **Validation**: Ensure mappings work with sample data
+
+### Common Mapping Scenarios
+
+**Basic Product Information**:
+- Product Title → Name
+- Description → Product Description
+- Price → Cost or Selling Price
+- SKU → Product Identifier
+- Images → Product Images
+
+**Variant Attributes**:
+- Color → Main Color attribute
+- Size → Apparel Size attribute
+- Material → Product Material
+- Weight → Shipping Weight
+- Dimensions → Product Dimensions
+
+**Category and Organization**:
+- Product Categories → WISEPIM Categories
+- Tags → Product Tags or Keywords
+- Brand → Brand attribute
+- Collection → Product Line or Series
+
+**Platform-Specific Fields**:
+- SEO Title → Meta Title
+- SEO Description → Meta Description
+- Handle/Slug → URL Slug
+- Vendor → Supplier or Manufacturer
+
+`[Screenshot of attribute mapping interface showing source and target fields]`
+
+## Import and Export Workflows
+
+### Importing Products
+
+**Import Process**:
+1. **Select Integration**: Choose configured platform connection
+2. **Configure Import**: Set filters and options for import
+3. **Preview Data**: Review products that will be imported
+4. **Map Attributes**: Ensure proper field mapping
+5. **Execute Import**: Start the import process
+6. **Monitor Progress**: Track import status and handle errors
+
+**Import Options**:
+- **Full Import**: Import all available products
+- **Selective Import**: Choose specific products or categories
+- **Incremental Import**: Only import new or changed products
+- **Scheduled Import**: Set up automatic recurring imports
+
+**Data Handling**:
+- **Duplicate Detection**: Identify and handle existing products
+- **Data Validation**: Ensure imported data meets quality standards
+- **Error Handling**: Manage products that fail to import
+- **Conflict Resolution**: Handle differences in existing data
+
+### Exporting Products
+
+**Export Process**:
+1. **Select Products**: Choose which products to export
+2. **Choose Integration**: Select target platform or format
+3. **Configure Export**: Set export options and formatting
+4. **Map Attributes**: Ensure proper field mapping for target
+5. **Execute Export**: Start the export process
+6. **Verify Results**: Confirm successful export to target platform
+
+**Export Options**:
+- **Platform Export**: Send directly to connected e-commerce platforms
+- **File Export**: Generate CSV, XML, or JSON files
+- **API Export**: Push data via custom API connections
+- **Scheduled Export**: Set up automatic recurring exports
+
+**Quality Control**:
+- **Pre-export Validation**: Check data quality before export
+- **Format Compliance**: Ensure data meets platform requirements
+- **Error Reporting**: Identify and resolve export issues
+- **Success Confirmation**: Verify successful data transfer
+
+`[Screenshot showing import/export workflow interface with progress indicators]`
+
+## Integration Best Practices
+
+### Planning Your Integration Strategy
+
+**Assessment Phase**:
+- Inventory all platforms and systems you use
+- Identify primary and secondary data sources
+- Map data flow between systems
+- Plan for data quality and consistency
+
+**Implementation Approach**:
+- Start with your primary e-commerce platform
+- Test with a small subset of products first
+- Gradually expand to full product catalog
+- Add additional integrations incrementally
+
+### Data Quality Management
+
+**Before Integration**:
+- Clean up existing product data
+- Standardize naming conventions
+- Ensure consistent categorization
+- Validate required fields are complete
+
+**During Integration**:
+- Monitor import/export processes closely
+- Review mapping accuracy regularly
+- Handle errors and exceptions promptly
+- Maintain data consistency across platforms
+
+**Ongoing Maintenance**:
+- Regular data quality audits
+- Update mappings as platforms evolve
+- Monitor integration performance
+- Keep credentials and connections current
+
+### Security Considerations
+
+**Credential Management**:
+- Use secure, unique API keys for each integration
+- Regularly rotate credentials when possible
+- Limit API permissions to minimum required access
+- Monitor for unauthorized access or usage
+
+**Data Protection**:
+- Ensure integrations comply with data privacy regulations
+- Limit data exposure to necessary fields only
+- Use encrypted connections for all data transfers
+- Maintain audit logs of data access and changes
+
+`[Screenshot showing integration security settings and credential management]`
+
+## Troubleshooting Common Issues
+
+### "Connection Failed" Errors
+
+**Possible Causes**:
+- Incorrect API credentials or expired tokens
+- Platform URL changes or server issues
+- Network connectivity problems
+- API rate limiting or access restrictions
+
+**Solutions**:
+- Verify and update API credentials
+- Check platform status and availability
+- Test network connectivity and firewall settings
+- Review API usage limits and restrictions
+
+### "Import/Export Failures"
+
+**Common Issues**:
+- Attribute mapping mismatches
+- Data format incompatibilities
+- Missing required fields
+- Platform-specific validation errors
+
+**Resolution Steps**:
+- Review and update attribute mappings
+- Check data format requirements for target platform
+- Ensure all required fields are populated
+- Validate data against platform specifications
+
+### "Sync Performance Issues"
+
+**Performance Problems**:
+- Slow import/export processes
+- Timeouts during large data transfers
+- Memory or resource limitations
+- Network bandwidth constraints
+
+**Optimization Strategies**:
+- Process data in smaller batches
+- Schedule syncs during off-peak hours
+- Optimize attribute mappings for efficiency
+- Monitor and adjust sync frequency
+
+### "Data Inconsistencies"
+
+**Consistency Issues**:
+- Products appearing differently across platforms
+- Missing or incorrect attribute values
+- Category mapping problems
+- Image or media sync failures
+
+**Correction Methods**:
+- Review and standardize attribute mappings
+- Implement data validation rules
+- Regular cross-platform data audits
+- Automated consistency checking
+
+`[Screenshot showing troubleshooting interface with error logs and resolution suggestions]`
+
+## Advanced Integration Features
+
+### Custom API Connections
+
+**When to Use Custom APIs**:
+- Platforms not covered by standard integrations
+- Specialized data sources or formats
+- Legacy systems requiring custom connections
+- Unique business requirements or workflows
+
+**Implementation Process**:
+- Define API endpoints and authentication methods
+- Create custom attribute mappings
+- Implement data transformation logic
+- Test thoroughly with sample data
+
+### Webhook Integration
+
+**Real-time Data Sync**:
+- Receive instant notifications of platform changes
+- Trigger automatic imports when products are updated
+- Maintain real-time inventory synchronization
+- Reduce sync delays and improve responsiveness
+
+**Webhook Configuration**:
+- Set up webhook endpoints in external platforms
+- Configure WISEPIM to receive webhook notifications
+- Define actions to take when webhooks are received
+- Monitor webhook delivery and handle failures
+
+### Batch Processing
+
+**Large-Scale Operations**:
+- Process thousands of products efficiently
+- Schedule bulk operations during off-peak hours
+- Monitor progress and handle errors gracefully
+- Optimize resource usage for large datasets
+
+**Batch Configuration**:
+- Set appropriate batch sizes for your data volume
+- Configure retry logic for failed items
+- Implement progress tracking and reporting
+- Plan for rollback scenarios if needed
+
+### Multi-Platform Orchestration
+
+**Coordinated Sync**:
+- Manage data flow between multiple platforms
+- Ensure consistency across all connected systems
+- Handle conflicts when platforms have different data
+- Maintain master data integrity
+
+**Orchestration Strategies**:
+- Define primary data sources for each attribute
+- Implement conflict resolution rules
+- Schedule coordinated sync operations
+- Monitor cross-platform data consistency
+
+`[Screenshot showing advanced integration configuration with custom APIs and webhooks]`
+
+## Integration Monitoring and Analytics
+
+### Performance Monitoring
+
+**Key Metrics**:
+- Sync success rates and failure counts
+- Data transfer speeds and processing times
+- API usage and rate limit consumption
+- Error rates and resolution times
+
+**Monitoring Tools**:
+- Real-time sync status dashboards
+- Historical performance trends
+- Alert notifications for failures
+- Detailed logging and audit trails
+
+### Data Analytics
+
+**Sync Analytics**:
+- Track which products sync successfully
+- Identify common failure patterns
+- Monitor data quality improvements over time
+- Analyze platform-specific performance
+
+**Business Impact**:
+- Measure time saved through automation
+- Track data consistency improvements
+- Monitor catalog completeness across platforms
+- Analyze customer experience improvements
+
+### Reporting and Insights
+
+**Regular Reports**:
+- Weekly sync performance summaries
+- Monthly data quality assessments
+- Quarterly integration health reviews
+- Annual platform performance analysis
+
+**Actionable Insights**:
+- Identify opportunities for optimization
+- Recommend additional integrations
+- Suggest workflow improvements
+- Highlight data quality issues
+
+`[Screenshot showing integration analytics dashboard with performance metrics]`
+
+## Getting Help with Integrations
+
+### Self-Service Resources
+
+**Documentation**:
+- Platform-specific setup guides
+- Attribute mapping references
+- Troubleshooting knowledge base
+- Best practice recommendations
+
+**Community Support**:
+- User forums and discussion groups
+- Shared mapping templates
+- Community-contributed solutions
+- Peer-to-peer assistance
+
+### Professional Support
+
+**Technical Assistance**:
+- Integration setup and configuration help
+- Custom mapping development
+- Performance optimization consulting
+- Troubleshooting complex issues
+
+**Strategic Guidance**:
+- Integration strategy planning
+- Platform selection recommendations
+- Workflow optimization advice
+- Scaling and growth planning
+
+### Training and Onboarding
+
+**Getting Started**:
+- Integration fundamentals training
+- Platform-specific workshops
+- Hands-on setup assistance
+- Best practice guidance
+
+**Advanced Training**:
+- Custom integration development
+- Advanced mapping techniques
+- Performance optimization strategies
+- Enterprise-scale implementation
+
+<Info>
+Successful integrations are the foundation of an efficient product management workflow. Take time to plan your integration strategy and ensure proper setup for long-term success.
+</Info>
+
+`[Screenshot showing a successful integration setup with multiple connected platforms and healthy sync status]` 
